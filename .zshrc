@@ -104,8 +104,6 @@ source $ZSH/oh-my-zsh.sh
 alias cls="clear"
 alias ls="lsd --color=auto"
 alias j="autojump"
-alias vim="nvim"
-alias vimm="vim"
 alias lf="lfub"
 alias chadwm='startx ~/.config/chadwm/scripts/run.sh'
 source /home/akash/Documents/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
