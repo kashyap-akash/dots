@@ -1,0 +1,11 @@
+#!/bin/sh
+
+wall=$(find ~/Pictures/Wallpapers/samurai-panda-fuji.png)
+
+
+#wall1=$(find ~/Pictures/Wallpapers/wallhaven-rrodj7.jpg)
+#add this as wallpaper
+swww img $wall 
+#generate colour scheme
+wal -c
+wal -i $wall

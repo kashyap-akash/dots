@@ -1,0 +1,41 @@
+# Reload sxhkd
+super + shift + Escape
+	killall sxhkd & sxhkd
+
+#VOLUME KEYS
+XF86AudioRaiseVolume
+	changevolume up
+
+XF86AudioLowerVolume
+	changevolume down
+
+XF86AudioMute
+	changevolume mute
+
+
+#BRIGHTNESS KEYS
+XF86MonBrightnessUp
+	changebrightness up
+
+XF86MonBrightnessDown
+	changebrightness down
+
+#DESKTOP KEYS
+super + Return
+  st
+super + b 
+  brave --incognito
+super + shift + b 
+  brave 
+super + shift +a 
+  st -e musikcube
+super + e
+  st -e lf
+super + shift + q
+  slock
+super + shift + p
+  scrot --select --quality 100 ~/Pictures/Screenshots/%Y-%m-%d-%T-screenshot.jpg
+super + control + p 
+  scrot --quality 100 ~/Pictures/Screenshots/%Y-%m-%d-%T-screenshot.jpg
+super + shift + w
+  st -e nmtui

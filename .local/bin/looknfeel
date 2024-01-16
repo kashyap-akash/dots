@@ -1,0 +1,12 @@
+#!/bin/sh
+
+wall=$(find ~/Pictures/Wallpapers/sunset-awesome.jpg)
+
+
+#wall1=$(find ~/Pictures/Wallpapers/wallhaven-rrodj7.jpg)
+#add this as wallpaper
+xwallpaper --zoom $wall 
+#generate colour scheme
+wal -c
+wal -i $wall
+xdotool key super+F5

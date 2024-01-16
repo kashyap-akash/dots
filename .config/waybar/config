@@ -1,0 +1,112 @@
+{
+    "layer": "top", // Waybar at top layer
+    "height": 20, // Waybar height (to be removed for auto height)
+    "spacing": 1, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": [],
+    "modules-right": ["custom/cpu","pulseaudio","network", "battery","custom/clock"],
+    // Modules configuration
+        "hyprland/workspaces": {
+          	"format": "{icon}",
+          	"format-icons": {
+	        	"1":" 󰣇 ",
+	        	"2":"  ",
+	        	"3":"  ",
+		        "4":"  ",
+		        "5":"  ",
+            "urgent": ""
+            		       
+	},
+       "persistent-workspaces": {
+             "*": 5, // 5 workspaces by default on every monitor
+              }
+},
+
+       "custom/clock":{    
+         "exec": "~/.local/bin/sb-clock",
+         "on-click-right": "st -e calcurse",
+         "interval": 1
+       },
+
+       "custom/battery":{
+         "exec":"~/.local/bin/sb-battery",
+         "interval": 1
+       },
+      
+        "custom/network":{
+        "format-alt": "{essid} -> {ifname}: {ipaddr}", 
+        "on-click-right": "st -e nmtui",
+        "exec":"~/.local/bin/sb-internet",
+        "interval": 5
+       },
+
+         "custom/cpu": {
+            "exec": "~/.local/bin/sb-cpu",
+            "on-click-right": "st -e gotop",
+            "interval": 3
+          },
+
+
+       "clock": {
+        // "timezone": "America/New_York",
+        
+        //"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+
+
+ 
+    "battery": {
+        "states":{
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "interval":1,
+        //"format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["  ", "  ", "  ", "  ", "  "]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "   ({signalStrength}%)",
+        "format-ethernet": "  {ipaddr}/{cidr}",
+        "tooltip-format": "  {ifname} via {gwaddr}",
+        "format-linked": "  {ifname} (No IP)",
+        "format-disconnected": "❎ Disconnected",
+        "format-alt": "{essid} -> {ifname}: {ipaddr}",
+        "on-click-right": "st -e nmtui",
+        "interval": 5
+    },
+    "pulseaudio": {
+        "format": "{icon}  {volume}% ",
+        "format-bluetooth": "{icon}  {volume}%",
+        "format-bluetooth-muted": " {icon}",
+        "format-alt":"{format_source}",
+        "format-muted": "  ",
+        "format-source": "{volume}%  ",
+        "format-source-muted": " ",
+            "format-icons": {
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": "  ",
+            "default": ["", "", ""]
+        },
+        "scroll-step": 1,
+        "on-click-right": "pavucontrol"
+    },
+
+
+}
+
