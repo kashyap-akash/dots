@@ -1,2 +1,3 @@
+require("myconf.lazy")
 require("myconf.set")
-require("myconf.remap")
+require("myconf.remaps")
