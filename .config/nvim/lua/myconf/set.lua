@@ -1,3 +1,4 @@
+vim.opt.guicursor = ""
 vim.g.netrw_liststyle = "3"
 vim.opt.nu = true             --LINE NUMBERS
 vim.opt.relativenumber = true --DUHH....
