@@ -1,0 +1,41 @@
+#!/bin/sh
+
+#CONFIG FILES
+ln -s /home/akash/dots/.config/hypr /home/akash/.config
+ln -s /home/akash/dots/.config/lf /home/akash/.config
+ln -s /home/akash/dots/.config/MangoHud /home/akash/.config
+ln -s /home/akash/dots/.config/musikcube /home/akash/.config
+ln -s /home/akash/dots/.config/nvim /home/akash/.config
+ln -s /home/akash/dots/.config/sxhkd /home/akash/.config
+ln -s /home/akash/dots/.config/waybar /home/akash/.config
+ln -s /home/akash/dots/.config/cava /home/akash/.config
+ln -s /home/akash/dots/.config/dunst /home/akash/.config
+ln -s /home/akash/dots/.config/glava /home/akash/.config
+ln -s /home/akash/dots/.xinitrc /home/akash
+ln -s /home/akash/dots/.zshrc /home/akash
+
+#SCRIPTS 
+ln -s /home/akash/dots/.local/bin/wiof ~/.local/bin
+ln -s /home/akash/dots/.local/bin/wion ~/.local/bin
+ln -s /home/akash/dots/.local/bin/update-library.sh ~/.local/bin
+ln -s /home/akash/dots/.local/bin/sb-volume ~/.local/bin
+ln -s /home/akash/dots/.local/bin/sb-internet ~/.local/bin
+ln -s /home/akash/dots/.local/bin/sb-cpu ~/.local/bin
+ln -s /home/akash/dots/.local/bin/sb-clock ~/.local/bin
+ln -s /home/akash/dots/.local/bin/sb-battery ~/.local/bin
+ln -s /home/akash/dots/.local/bin/pkgls ~/.local/bin
+ln -s /home/akash/dots/.local/bin/mirrorup ~/.local/bin
+ln -s /home/akash/dots/.local/bin/looknfeel ~/.local/bin
+ln -s /home/akash/dots/.local/bin/look ~/.local/bin
+ln -s /home/akash/dots/.local/bin/changebrightness ~/.local/bin
+ln -s /home/akash/dots/.local/bin/changevolume ~/.local/bin
+ln -s /home/akash/dots/.local/bin/extradim ~/.local/bin
+ln -s /home/akash/dots/.local/bin/limitvol ~/.local/bin
+ln -s /home/akash/dots/.local/bin/lfub ~/.local/bin
+
+#PROGRAMS
+ln -s /home/akash/dots/.local/src/st ~/.local/src
+ln -s /home/akash/dots/.local/src/dwmblocks ~/.local/src
+ln -s /home/akash/dots/.local/src/dwm ~/.local/src
+ln -s /home/akash/dots/.local/src/dmenu ~/.local/src
+
