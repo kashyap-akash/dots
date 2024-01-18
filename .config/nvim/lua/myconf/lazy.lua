@@ -19,6 +19,7 @@ local plugins = {
         'nvim-telescope/telescope.nvim',
         dependencies = { { 'nvim-lua/plenary.nvim' } }          --ASYNCHRONISM IN LUA
     },
+    {'nvim-tree/nvim-web-devicons'},
     { "catppuccin/nvim",                            name = "catppuccin" }, --COLORSCHEME.....
     { 'nvim-treesitter/nvim-treesitter',            build = ':TSUpdate' }, --TS SYNTAX HIGHLIGHTING....
     { 'tpope/vim-fugitive' },                                   --GITHUB STATISTICS
