@@ -1,71 +1,110 @@
-17:40:20 [info] [LOG SESSION] ---------- START ----------
-17:40:20 [info] [PluginFactory] loading plugins
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsupereqdsp.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpipewireout.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libmpris.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libportaudioout.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libtaglibreader.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libhttpdatastream.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libstockencoders.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libserver.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsndioout.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libopenmptdecoder.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libalsaout.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libgmedecoder.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libffmpegdecoder.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libnullout.so
-17:40:20 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpulseout.so
-17:40:20 [info] [PortAudioOut] Pa_Initialize() return code: 0
-17:40:20 [info] [PipeWireOut] shutdown started
-17:40:20 [info] [PipeWireOut] shutdown complete
-17:40:20 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
-17:40:20 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
-17:40:20 [info] [PortAudioOut] Pa_Terminate() return code: 0
-17:40:20 [info] [Indexer] indexer source 155697690 running...
-17:40:20 [info] [Indexer] indexer source 155697690 finished
-17:40:20 [info] [Indexer] indexer source -1303229654 running...
-17:40:20 [info] [Indexer] indexer source -1303229654 finished
-17:40:20 [info] [Indexer] scanning /home/akash/Music/
-17:40:20 [info] [Indexer] scan completed successfully
-17:40:20 [info] [Indexer] cleanup 1/2
-17:40:20 [info] [Indexer] cleanup 2/2
-17:40:20 [info] [Indexer] optimizing
-17:40:20 [info] [Indexer] done!
-17:40:20 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
-17:40:20 [info] [LocalLibrary] query 'CategoryListQuery' running
-17:40:20 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
-17:40:20 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
-17:40:20 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
-17:40:20 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
-17:40:20 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
-17:40:20 [info] [LocalLibrary] query 'CategoryListQuery' running
-17:40:20 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
-17:40:20 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
-17:40:20 [info] [LocalLibrary] query 'CategoryListQuery' running
-17:40:20 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
-17:40:20 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-17:40:20 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-17:40:20 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-17:40:20 [info] [GaplessTransport] starting track at /home/akash/Music/Au5 - A Million Miles (feat. Diandra Faye).flac
-17:40:20 [info] [Player] new instance created
-17:40:20 [info] [GaplessTransport] stop
-17:40:20 [info] [Stream] opening /home/akash/Music/Au5 - A Million Miles (feat. Diandra Faye).flac
-17:40:20 [info] [LocalFileStream] opening file: /home/akash/Music/Au5 - A Million Miles (feat. Diandra Faye).flac
-17:40:20 [info] [ffmpegdecoder] parsing data stream...
-17:40:20 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-17:40:20 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-17:40:20 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-17:40:20 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-17:40:20 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-17:40:20 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-17:40:20 [info] [ffmpegdecoder] found audio stream!
-17:40:20 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-17:40:20 [info] [Streams] found a decoder for /home/akash/Music/Au5 - A Million Miles (feat. Diandra Faye).flac
-17:40:20 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-17:40:20 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-17:40:20 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-17:40:20 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-17:40:21 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
-17:40:21 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
-17:40:21 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
-17:40:21 [info] [GaplessTransport] stop
+17:09:10 [info] [LOG SESSION] ---------- START ----------
+17:09:10 [info] [PluginFactory] loading plugins
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsupereqdsp.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpipewireout.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libmpris.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libportaudioout.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libtaglibreader.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libhttpdatastream.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libstockencoders.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libserver.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsndioout.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libopenmptdecoder.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libalsaout.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libgmedecoder.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libffmpegdecoder.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libnullout.so
+17:09:10 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpulseout.so
+17:09:11 [info] [PortAudioOut] Pa_Initialize() return code: 0
+17:09:11 [info] [PipeWireOut] shutdown started
+17:09:11 [info] [PipeWireOut] shutdown complete
+17:09:11 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
+17:09:11 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
+17:09:11 [info] [PortAudioOut] Pa_Terminate() return code: 0
+17:09:11 [info] [Indexer] indexer source 155697690 running...
+17:09:11 [info] [Indexer] indexer source 155697690 finished
+17:09:11 [info] [Indexer] indexer source -1303229654 running...
+17:09:11 [info] [Indexer] indexer source -1303229654 finished
+17:09:11 [info] [Indexer] scanning /home/akash/Music/
+17:09:11 [info] [Indexer] scan completed successfully
+17:09:11 [info] [Indexer] cleanup 1/2
+17:09:11 [info] [Indexer] cleanup 2/2
+17:09:11 [info] [Indexer] optimizing
+17:09:11 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+17:09:11 [info] [LocalLibrary] query 'CategoryListQuery' running
+17:09:11 [info] [LocalLibrary] query 'SearchTrackListQuery' enqueued
+17:09:11 [info] [Indexer] done!
+17:09:11 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+17:09:11 [info] [LocalLibrary] query 'SearchTrackListQuery' running
+17:09:11 [info] [LocalLibrary] query 'SearchTrackListQuery' finished with status=4
+17:09:11 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
+17:09:11 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
+17:09:11 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
+17:09:11 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+17:09:11 [info] [LocalLibrary] query 'CategoryListQuery' running
+17:09:11 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+17:09:11 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+17:09:11 [info] [LocalLibrary] query 'CategoryListQuery' running
+17:09:11 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+17:09:11 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+17:09:11 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+17:09:11 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+17:09:11 [info] [GaplessTransport] starting track at /home/akash/Music/Au5 - A Million Miles (feat. Diandra Faye).flac
+17:09:11 [info] [Player] new instance created
+17:09:11 [info] [GaplessTransport] stop
+17:09:11 [info] [Stream] opening /home/akash/Music/Au5 - A Million Miles (feat. Diandra Faye).flac
+17:09:11 [info] [LocalFileStream] opening file: /home/akash/Music/Au5 - A Million Miles (feat. Diandra Faye).flac
+17:09:11 [info] [ffmpegdecoder] parsing data stream...
+17:09:11 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+17:09:11 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+17:09:11 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+17:09:11 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+17:09:11 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+17:09:11 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+17:09:11 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+17:09:11 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+17:09:11 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+17:09:11 [info] [ffmpegdecoder] found audio stream!
+17:09:11 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+17:09:11 [info] [Streams] found a decoder for /home/akash/Music/Au5 - A Million Miles (feat. Diandra Faye).flac
+17:09:11 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+17:09:12 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+17:09:12 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+17:09:12 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+17:09:12 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+17:09:12 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+17:09:12 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+17:09:13 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+17:09:13 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+17:09:13 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+17:09:13 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+17:09:13 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+17:09:13 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+17:09:15 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+17:09:15 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+17:09:15 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+17:09:15 [info] [GaplessTransport] starting track at /home/akash/Music/Au5 - Waiting.flac
+17:09:15 [info] [Player] new instance created
+17:09:15 [info] [GaplessTransport] stop
+17:09:15 [info] [Stream] opening /home/akash/Music/Au5 - Waiting.flac
+17:09:15 [info] [LocalFileStream] opening file: /home/akash/Music/Au5 - Waiting.flac
+17:09:15 [info] [ffmpegdecoder] parsing data stream...
+17:09:15 [info] [ffmpegdecoder] found audio stream!
+17:09:15 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+17:09:15 [info] [Streams] found a decoder for /home/akash/Music/Au5 - Waiting.flac
+17:09:15 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+17:09:16 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+17:09:16 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+17:09:16 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+17:09:16 [info] [Player] new instance created
+17:09:16 [info] [Stream] opening /home/akash/Music/Au5 - Entrance.flac
+17:09:16 [info] [LocalFileStream] opening file: /home/akash/Music/Au5 - Entrance.flac
+17:09:16 [info] [ffmpegdecoder] parsing data stream...
+17:09:16 [info] [ffmpegdecoder] found audio stream!
+17:09:16 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+17:09:16 [info] [Streams] found a decoder for /home/akash/Music/Au5 - Entrance.flac
+17:09:16 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+17:09:52 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
+17:09:52 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
+17:09:52 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
+17:09:52 [info] [GaplessTransport] stop

@@ -1,8 +1,4 @@
-vim.opt.guicursor ={
-  'n-v-c:block',
-  'i-ci:block-Cursor/lCursor-blinkwait0-blinkon10-blinkoff10',
-  'r:block-Cursor/lCursor-blinkwait0-blinkon10-blinkoff10'
-}
+vim.opt.guicursor = ""
 vim.g.netrw_liststyle = "3"
 vim.opt.nu = true             --LINE NUMBERS
 vim.opt.relativenumber = true --DUHH....

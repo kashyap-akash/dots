@@ -14,7 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 
 local plugins = {
-    { 'wbthomason/packer.nvim' }, --MMM......
     {
         'nvim-telescope/telescope.nvim',
         dependencies = { { 'nvim-lua/plenary.nvim' } }          --ASYNCHRONISM IN LUA
@@ -25,10 +24,13 @@ local plugins = {
     { 'tpope/vim-fugitive' },                                   --GITHUB STATISTICS
     { 'norcalli/nvim-colorizer.lua' },                          --COLORIZE RGB AND OTHER COLOUR VALUES
     { "numToStr/Comment.nvim" },                                -- Easily comment stuff
-    { 'JoosepAlviste/nvim-ts-context-commentstring' },
-    {'nvim-tree/nvim-tree.lua',
-      config = function()
-      vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }       --Cool Looking Bottom Line
+    },
+    { 'JoosepAlviste/nvim-ts-context-commentstring' }, {'nvim-tree/nvim-tree.lua',
+    config = function()
+        vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
     end,},                                                         --FILE TREE
     { 'akinsho/toggleterm.nvim', version = "*", config = true }, --TOGGLE TERMINAL INSIDE NEOVIM
     {
