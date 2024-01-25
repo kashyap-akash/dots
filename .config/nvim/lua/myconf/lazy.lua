@@ -16,23 +16,27 @@ vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappin
 local plugins = {
     {
         'nvim-telescope/telescope.nvim',
-        dependencies = { { 'nvim-lua/plenary.nvim' } }          --ASYNCHRONISM IN LUA
+        dependencies = { { 'nvim-lua/plenary.nvim' } } --ASYNCHRONISM IN LUA
     },
-    {'nvim-tree/nvim-web-devicons'},
-    { "catppuccin/nvim",                            name = "catppuccin" }, --COLORSCHEME.....
-    { 'nvim-treesitter/nvim-treesitter',            build = ':TSUpdate' }, --TS SYNTAX HIGHLIGHTING....
+    { 'HiPhish/rainbow-delimiters.nvim' },
+    { 'theprimeagen/harpoon' },                                 --Fast A$$ Navigaton
+    { 'nvim-tree/nvim-web-devicons' },
+    { 'catppuccin/nvim',                 name = "catppuccin" }, --COLORSCHEME.....
+    { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' }, --TS SYNTAX HIGHLIGHTING....
     { 'tpope/vim-fugitive' },                                   --GITHUB STATISTICS
     { 'norcalli/nvim-colorizer.lua' },                          --COLORIZE RGB AND OTHER COLOUR VALUES
-    { "numToStr/Comment.nvim" },                                -- Easily comment stuff
+    { 'numToStr/Comment.nvim' },                                -- Easily comment stuff
     {
         'nvim-lualine/lualine.nvim',
-        dependencies = { 'nvim-tree/nvim-web-devicons' }       --Cool Looking Bottom Line
+        dependencies = { 'nvim-tree/nvim-web-devicons' } --Cool Looking Bottom Line
     },
-    { 'JoosepAlviste/nvim-ts-context-commentstring' }, {'nvim-tree/nvim-tree.lua',
+    { 'JoosepAlviste/nvim-ts-context-commentstring' }, {
+    'nvim-tree/nvim-tree.lua',
     config = function()
         vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
-    end,},                                                         --FILE TREE
-    { 'akinsho/toggleterm.nvim', version = "*", config = true }, --TOGGLE TERMINAL INSIDE NEOVIM
+    end,
+},                                                                                  --FILE TREE
+    { 'akinsho/toggleterm.nvim',                    version = "*", config = true }, --TOGGLE TERMINAL INSIDE NEOVIM
     {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',

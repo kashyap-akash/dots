@@ -1,5 +1,7 @@
 vim.opt.guicursor = ""
 vim.g.netrw_liststyle = "3"
+vim.o.termguicolors = true
+vim.cmd 'colorscheme catppuccin-mocha'
 vim.opt.nu = true             --LINE NUMBERS
 vim.opt.relativenumber = true --DUHH....
 
@@ -11,7 +13,6 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
-
 vim.opt.swapfile = true
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
