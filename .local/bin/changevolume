@@ -12,7 +12,7 @@ send_notification() {
 	* ) echo 🔇 && exit ;;
 esac
 
-	dunstify -a "changevolume" -u low -r 9993 -h int:value:"$volume" -i "volume-$1" "  $icon Volume: ${volume}%" -t 2000
+	dunstify -a "changevolume" -u low -r 9993 -h int:value:"$volume" -i "volume-$1" " Volume: ${volume}%" -t 2000
 }
 
 case $1 in

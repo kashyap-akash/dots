@@ -1,13 +1,14 @@
 {
-  "LastBrowseCategoryId": 13.0,
+  "LastBrowseCategoryId": 52.0,
   "LastBrowseCategoryType": "artist",
+  "LastBrowseDirectoryRoot": "/home/akash/Music/",
   "LastBrowseFilter": "",
   "LastBrowseFilterVisible": false,
   "LastCategoryFilter": "",
   "LastCategoryFilterMatchType": 1,
   "LastLibraryView": "Browse",
-  "LastPlayQueueIndex": 9,
-  "LastPlayQueueTime": 161.0,
+  "LastPlayQueueIndex": 0,
+  "LastPlayQueueTime": 5.0,
   "LastTrackFilter": "",
   "LastTrackFilterMatchType": 1
 }

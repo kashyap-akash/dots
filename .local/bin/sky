@@ -1,0 +1,4 @@
+#!/bin/sh
+
+exec wine ~/semag/skyrim/mods/Mod-Organizer/ModOrganizer.exe
+

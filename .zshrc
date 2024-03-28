@@ -4,8 +4,11 @@ export PATH=/home/akash/.local/src:$PATH
 #export JAVA_HOME=$(~/.sdkman/candidates/java/)
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 export _JAVA_AWT_WM_NONREPARENTING=1
-
+export DXVK_HUD=fps,memory 
+export DXVK_FRAME_RATE=33
+export WINE_LARGE_ADDRESS_AWARE=1
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -103,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cls="clear"
 alias ls="lsd --color=auto"
-alias j="autojump"
+#alias j="autojump"
 alias lf="lfub"
 alias chadwm='startx ~/.config/chadwm/scripts/run.sh'
 source /home/akash/Documents/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -8,7 +8,7 @@
 # 	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
 # esac
 
-display=$(date "+%a %b %d %I:%M %p")
+display=$(date "+%a %d %b %I:%M %p")
 echo  $display" "
  
 

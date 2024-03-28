@@ -11,7 +11,6 @@ ColorMyPencils()
 require("catppuccin").setup({
     flavour = "mocha", -- latte, frappe, macchiato, mocha
     background = {     -- :h background
-        light = "latte",
         dark = "mocha",
     },
     transparent_background = true, -- disables setting the background color.
@@ -51,15 +50,16 @@ require("catppuccin").setup({
                 information = { "italic" },
             },
             underlines = {
-                errors = { "underline" },
-                hints = { "underline" },
-                warnings = { "underline" },
-                information = { "underline" },
+                errors = { "undercurl" },
+                hints = { "undercurl" },
+                warnings = { "undercurl" },
+                information = { "undercurl" },
             },
             inlay_hints = {
                 background = true,
             },
         },
+
         cmp = true,
         gitsigns = true,
         nvimtree = true,
@@ -71,5 +71,6 @@ require("catppuccin").setup({
             enabled = true,
             -- style = "nvchad"
         }
+
     },
 })

@@ -55,21 +55,21 @@
 
 
 [urgency_low]
-    foreground = "#B3C3B8"
-    background = "#121518"
-    frame_color = "#B3C3B8"
+    foreground = "#7586B8"
+    background = "#0A0B14"
+    frame_color = "#7586B8"
     timeout = 10
     icon = ~/.config/dunst/images/notification.png
 
 [urgency_normal]
-    background = "#121518"
-    foreground = "#B3C3B8"
-    frame_color = "#B3C3B8"
+    background = "#0A0B14"
+    foreground = "#7586B8"
+    frame_color ="#7586B8"
     timeout = 10
     icon = ~/.config/dunst/images/notification.png
 
 [urgency_critical]
-    background = "#121518"
+    background = "#0A0B14"
     frame_color ="#B3C3B8"
     timeout = 0
     icon = ~/.config/dunst/images/notification.png

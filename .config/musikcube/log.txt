@@ -1,493 +1,111 @@
-23:02:06 [info] [LOG SESSION] ---------- START ----------
-23:02:06 [info] [PluginFactory] loading plugins
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsupereqdsp.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpipewireout.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libmpris.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libportaudioout.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libtaglibreader.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libhttpdatastream.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libstockencoders.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libserver.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsndioout.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libopenmptdecoder.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libalsaout.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libgmedecoder.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libffmpegdecoder.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libnullout.so
-23:02:06 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpulseout.so
-23:02:06 [info] [PortAudioOut] Pa_Initialize() return code: 0
-23:02:06 [info] [PipeWireOut] shutdown started
-23:02:06 [info] [PipeWireOut] shutdown complete
-23:02:06 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
-23:02:06 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
-23:02:06 [info] [PortAudioOut] Pa_Terminate() return code: 0
-23:02:06 [info] [Indexer] indexer source 155697690 running...
-23:02:06 [info] [Indexer] indexer source 155697690 finished
-23:02:06 [info] [Indexer] indexer source -1303229654 running...
-23:02:06 [info] [Indexer] indexer source -1303229654 finished
-23:02:06 [info] [Indexer] scanning /home/akash/Music/
-23:02:06 [info] [Indexer] scan completed successfully
-23:02:06 [info] [Indexer] cleanup 1/2
-23:02:06 [info] [Indexer] cleanup 2/2
-23:02:06 [info] [Indexer] optimizing
-23:02:06 [info] [Indexer] done!
-23:02:06 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
-23:02:06 [info] [LocalLibrary] query 'CategoryListQuery' running
-23:02:06 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
-23:02:06 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
-23:02:06 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
-23:02:06 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
-23:02:06 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
-23:02:06 [info] [LocalLibrary] query 'CategoryListQuery' running
-23:02:06 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
-23:02:06 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
-23:02:06 [info] [LocalLibrary] query 'CategoryListQuery' running
-23:02:06 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
-23:02:06 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:02:06 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:02:06 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:02:06 [info] [GaplessTransport] starting track at /home/akash/Music/Nickelback - Far Away.flac
-23:02:06 [info] [Player] new instance created
-23:02:06 [info] [GaplessTransport] stop
-23:02:06 [info] [Stream] opening /home/akash/Music/Nickelback - Far Away.flac
-23:02:06 [info] [LocalFileStream] opening file: /home/akash/Music/Nickelback - Far Away.flac
-23:02:06 [info] [ffmpegdecoder] parsing data stream...
-23:02:06 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:02:06 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:02:06 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:02:06 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:02:06 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:02:06 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:02:06 [info] [ffmpegdecoder] found audio stream!
-23:02:06 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:02:06 [info] [Streams] found a decoder for /home/akash/Music/Nickelback - Far Away.flac
-23:02:06 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:02:06 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:02:06 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:02:06 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:02:06 [info] [GaplessTransport] resume
-23:02:06 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:02:07 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:02:07 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:02:07 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:02:07 [info] [Player] new instance created
-23:02:07 [info] [Stream] opening /home/akash/Music/Nickelback - How You Remind Me.flac
-23:02:07 [info] [LocalFileStream] opening file: /home/akash/Music/Nickelback - How You Remind Me.flac
-23:02:07 [info] [ffmpegdecoder] parsing data stream...
-23:02:07 [info] [ffmpegdecoder] found audio stream!
-23:02:07 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:02:07 [info] [Streams] found a decoder for /home/akash/Music/Nickelback - How You Remind Me.flac
-23:02:07 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:03:06 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:03:06 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:03:06 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-23:03:51 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:03:51 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:03:51 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:03:51 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:03:51 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:03:51 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:05:38 [info] [ffmpegdecoder] finished decoding.
-23:05:41 [info] [GaplessTransport] stop
-23:06:36 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:06:36 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:06:36 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-23:09:22 [info] [ffmpegdecoder] finished decoding.
-23:09:24 [info] [GaplessTransport] stop
-23:14:51 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:14:51 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:14:51 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:14:51 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:14:51 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:14:51 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:14:51 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:14:51 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:14:51 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:14:51 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:14:51 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:14:51 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:14:51 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:14:51 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:14:51 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:14:51 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:14:51 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:14:51 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:14:52 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:14:52 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:14:52 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:14:52 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:14:52 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:14:52 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:14:52 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:14:52 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:14:52 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:14:52 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:14:52 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:14:52 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:14:52 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:14:52 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:14:52 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:14:52 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:14:52 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:14:52 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:14:52 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:14:52 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:14:52 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:14:52 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:14:52 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:14:52 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:14:57 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:14:57 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:14:57 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:14:57 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:14:57 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:14:57 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:14:58 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:14:58 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:14:58 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:14:58 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:14:58 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:14:58 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:14:58 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:14:58 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:14:58 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:14:58 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:14:58 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:14:58 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:14:58 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:14:58 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:14:58 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:14:58 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:14:58 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:14:58 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:14:59 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:14:59 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:14:59 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:14:59 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:14:59 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:14:59 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:15:00 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:15:00 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:15:00 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:15:00 [info] [GaplessTransport] starting track at /home/akash/Music/Illenium - Angel.flac
-23:15:00 [info] [Player] new instance created
-23:15:00 [info] [GaplessTransport] stop
-23:15:00 [info] [Stream] opening /home/akash/Music/Illenium - Angel.flac
-23:15:00 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Angel.flac
-23:15:00 [info] [ffmpegdecoder] parsing data stream...
-23:15:00 [info] [ffmpegdecoder] found audio stream!
-23:15:00 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:15:00 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Angel.flac
-23:15:00 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:15:00 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:15:00 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:15:00 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:15:00 [info] [Player] new instance created
-23:15:00 [info] [Stream] opening /home/akash/Music/Illenium - Every Piece Of Me.flac
-23:15:00 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Every Piece Of Me.flac
-23:15:00 [info] [ffmpegdecoder] parsing data stream...
-23:15:00 [info] [ffmpegdecoder] found audio stream!
-23:15:00 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:15:00 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Every Piece Of Me.flac
-23:15:00 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:15:02 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:15:02 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:15:02 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:15:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:15:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:15:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:15:02 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
-23:15:02 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
-23:15:02 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
-23:15:03 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
-23:15:03 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
-23:15:03 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
-23:15:10 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:15:10 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:15:10 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-23:15:39 [info] [ffmpegdecoder] finished decoding.
-23:15:41 [info] [GaplessTransport] stop
-23:15:41 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:15:41 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:15:41 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:15:41 [info] [Player] new instance created
-23:15:41 [info] [Stream] opening /home/akash/Music/Illenium - Lonely.flac
-23:15:41 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Lonely.flac
-23:15:41 [info] [ffmpegdecoder] parsing data stream...
-23:15:41 [info] [ffmpegdecoder] found audio stream!
-23:15:41 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:15:41 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Lonely.flac
-23:15:41 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:16:36 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:16:36 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:16:36 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-23:19:22 [info] [ffmpegdecoder] finished decoding.
-23:19:25 [info] [GaplessTransport] stop
-23:19:25 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:19:25 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:19:25 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:19:25 [info] [Player] new instance created
-23:19:25 [info] [Stream] opening /home/akash/Music/Illenium - Broken Ones.flac
-23:19:25 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Broken Ones.flac
-23:19:25 [info] [ffmpegdecoder] parsing data stream...
-23:19:25 [info] [ffmpegdecoder] found audio stream!
-23:19:25 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:19:25 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Broken Ones.flac
-23:19:25 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:20:32 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:20:32 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:20:32 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-23:23:53 [info] [ffmpegdecoder] finished decoding.
-23:23:56 [info] [GaplessTransport] stop
-23:23:56 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:23:56 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:23:56 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:23:56 [info] [Player] new instance created
-23:23:56 [info] [Stream] opening /home/akash/Music/Illenium - Sad Songs.flac
-23:23:56 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Sad Songs.flac
-23:23:56 [info] [ffmpegdecoder] parsing data stream...
-23:23:56 [info] [ffmpegdecoder] found audio stream!
-23:23:56 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:23:56 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Sad Songs.flac
-23:23:56 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:24:45 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:24:45 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:24:45 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-23:27:12 [info] [ffmpegdecoder] finished decoding.
-23:27:14 [info] [GaplessTransport] stop
-23:27:14 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:27:14 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:27:14 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:27:14 [info] [Player] new instance created
-23:27:14 [info] [Stream] opening /home/akash/Music/Illenium - Let You Go.flac
-23:27:14 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Let You Go.flac
-23:27:14 [info] [ffmpegdecoder] parsing data stream...
-23:27:14 [info] [ffmpegdecoder] found audio stream!
-23:27:14 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:27:14 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Let You Go.flac
-23:27:14 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:28:06 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:28:06 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:28:06 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-23:30:42 [info] [ffmpegdecoder] finished decoding.
-23:30:44 [info] [GaplessTransport] stop
-23:30:44 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:30:44 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:30:44 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:30:44 [info] [Player] new instance created
-23:30:44 [info] [Stream] opening /home/akash/Music/Illenium - Sound of Walking Away.flac
-23:30:44 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Sound of Walking Away.flac
-23:30:44 [info] [ffmpegdecoder] parsing data stream...
-23:30:44 [info] [ffmpegdecoder] found audio stream!
-23:30:44 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:30:44 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Sound of Walking Away.flac
-23:30:44 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:31:30 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:31:30 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:31:30 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-23:33:46 [info] [ffmpegdecoder] finished decoding.
-23:33:48 [info] [GaplessTransport] stop
-23:33:49 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:33:49 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:33:49 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:33:49 [info] [Player] new instance created
-23:33:49 [info] [Stream] opening /home/akash/Music/Illenium - Feel Good.flac
-23:33:49 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Feel Good.flac
-23:33:49 [info] [ffmpegdecoder] parsing data stream...
-23:33:49 [info] [ffmpegdecoder] found audio stream!
-23:33:49 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:33:49 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Feel Good.flac
-23:33:49 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:34:52 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:34:52 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:34:52 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-23:38:00 [info] [ffmpegdecoder] finished decoding.
-23:38:02 [info] [GaplessTransport] stop
-23:38:02 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:38:02 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:38:02 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:38:02 [info] [Player] new instance created
-23:38:02 [info] [Stream] opening /home/akash/Music/Illenium - Fractures.flac
-23:38:02 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Fractures.flac
-23:38:02 [info] [ffmpegdecoder] parsing data stream...
-23:38:02 [info] [ffmpegdecoder] found audio stream!
-23:38:02 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:38:02 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Fractures.flac
-23:38:02 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:39:04 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:39:04 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:39:04 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-23:42:08 [info] [ffmpegdecoder] finished decoding.
-23:42:10 [info] [GaplessTransport] stop
-23:42:10 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:42:10 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:42:10 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:42:10 [info] [Player] new instance created
-23:42:10 [info] [Stream] opening /home/akash/Music/Illenium - Beautiful Creatures.flac
-23:42:10 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Beautiful Creatures.flac
-23:42:10 [info] [ffmpegdecoder] parsing data stream...
-23:42:10 [info] [ffmpegdecoder] found audio stream!
-23:42:10 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:42:10 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Beautiful Creatures.flac
-23:42:10 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:43:11 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:43:11 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:43:11 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-23:46:13 [info] [ffmpegdecoder] finished decoding.
-23:46:14 [info] [GaplessTransport] pause
-23:48:11 [info] [GaplessTransport] resume
-23:48:12 [info] [GaplessTransport] stop
-23:48:12 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:48:12 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:48:12 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:48:12 [info] [Player] new instance created
-23:48:12 [info] [Stream] opening /home/akash/Music/Illenium - U & Me.flac
-23:48:12 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - U & Me.flac
-23:48:12 [info] [ffmpegdecoder] parsing data stream...
-23:48:12 [info] [ffmpegdecoder] found audio stream!
-23:48:12 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:48:12 [info] [Streams] found a decoder for /home/akash/Music/Illenium - U & Me.flac
-23:48:12 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:49:12 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:49:12 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:49:12 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-23:52:10 [info] [ffmpegdecoder] finished decoding.
-23:52:13 [info] [GaplessTransport] stop
-23:52:13 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:52:13 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:52:13 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:52:13 [info] [Player] new instance created
-23:52:13 [info] [Stream] opening /home/akash/Music/Illenium - Brave Soul.flac
-23:52:13 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Brave Soul.flac
-23:52:13 [info] [ffmpegdecoder] parsing data stream...
-23:52:13 [info] [ffmpegdecoder] found audio stream!
-23:52:13 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:52:13 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Brave Soul.flac
-23:52:13 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:53:06 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:53:06 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:53:06 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-23:55:44 [info] [ffmpegdecoder] finished decoding.
-23:55:46 [info] [GaplessTransport] stop
-23:55:46 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-23:55:46 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-23:55:46 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-23:55:46 [info] [Player] new instance created
-23:55:46 [info] [Stream] opening /home/akash/Music/Illenium - Fragments.flac
-23:55:46 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Fragments.flac
-23:55:46 [info] [ffmpegdecoder] parsing data stream...
-23:55:47 [info] [ffmpegdecoder] found audio stream!
-23:55:47 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-23:55:47 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Fragments.flac
-23:55:47 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-23:56:55 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-23:56:55 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-23:56:55 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-00:00:21 [info] [ffmpegdecoder] finished decoding.
-00:00:23 [info] [GaplessTransport] stop
-00:00:24 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-00:00:24 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-00:00:24 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-00:00:24 [info] [Player] new instance created
-00:00:24 [info] [Stream] opening /home/akash/Music/Illenium - I See You.flac
-00:00:24 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - I See You.flac
-00:00:24 [info] [ffmpegdecoder] parsing data stream...
-00:00:24 [info] [ffmpegdecoder] found audio stream!
-00:00:24 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-00:00:24 [info] [Streams] found a decoder for /home/akash/Music/Illenium - I See You.flac
-00:00:24 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-00:01:16 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-00:01:16 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-00:01:16 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-00:03:51 [info] [ffmpegdecoder] finished decoding.
-00:03:53 [info] [GaplessTransport] stop
-00:03:54 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
-00:03:54 [info] [LocalLibrary] query 'TrackMetadataQuery' running
-00:03:54 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
-00:03:54 [info] [Player] new instance created
-00:03:54 [info] [Stream] opening /home/akash/Music/Illenium - Fractures (feat. Nevve).flac
-00:03:54 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Fractures (feat. Nevve).flac
-00:03:54 [info] [ffmpegdecoder] parsing data stream...
-00:03:54 [info] [ffmpegdecoder] found audio stream!
-00:03:54 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-00:03:54 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Fractures (feat. Nevve).flac
-00:03:54 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-00:05:20 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-00:05:20 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-00:05:20 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-00:09:37 [info] [ffmpegdecoder] finished decoding.
-00:09:39 [info] [GaplessTransport] stop
-00:10:40 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-00:10:40 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-00:10:40 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-00:10:53 [info] [GaplessTransport] starting track at /home/akash/Music/Illenium - Fractures.flac
-00:10:53 [info] [Player] new instance created
-00:10:53 [info] [GaplessTransport] stop
-00:10:53 [info] [Stream] opening /home/akash/Music/Illenium - Fractures.flac
-00:10:53 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Fractures.flac
-00:10:53 [info] [ffmpegdecoder] parsing data stream...
-00:10:53 [info] [ffmpegdecoder] found audio stream!
-00:10:53 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-00:10:53 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Fractures.flac
-00:10:53 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-00:10:53 [info] [Player] new instance created
-00:10:53 [info] [Stream] opening /home/akash/Music/Illenium - Beautiful Creatures.flac
-00:10:53 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Beautiful Creatures.flac
-00:10:53 [info] [ffmpegdecoder] parsing data stream...
-00:10:53 [info] [ffmpegdecoder] found audio stream!
-00:10:53 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-00:10:53 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Beautiful Creatures.flac
-00:10:53 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-00:11:03 [info] [GaplessTransport] starting track at /home/akash/Music/Illenium - Fractures (feat. Nevve).flac
-00:11:03 [info] [Player] new instance created
-00:11:03 [info] [GaplessTransport] stop
-00:11:03 [info] [Stream] opening /home/akash/Music/Illenium - Fractures (feat. Nevve).flac
-00:11:03 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Fractures (feat. Nevve).flac
-00:11:03 [info] [ffmpegdecoder] parsing data stream...
-00:11:03 [info] [ffmpegdecoder] found audio stream!
-00:11:03 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-00:11:03 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Fractures (feat. Nevve).flac
-00:11:03 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-00:11:06 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-00:11:09 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-00:11:10 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-00:11:11 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-00:11:52 [info] [GaplessTransport] starting track at /home/akash/Music/Illenium - Fractures.flac
-00:11:52 [info] [Player] new instance created
-00:11:52 [info] [Stream] opening /home/akash/Music/Illenium - Fractures.flac
-00:11:52 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Fractures.flac
-00:11:52 [info] [GaplessTransport] stop
-00:11:52 [info] [ffmpegdecoder] parsing data stream...
-00:11:52 [info] [ffmpegdecoder] found audio stream!
-00:11:52 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-00:11:52 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Fractures.flac
-00:11:52 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-00:11:52 [info] [Player] new instance created
-00:11:52 [info] [Stream] opening /home/akash/Music/Illenium - Beautiful Creatures.flac
-00:11:52 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - Beautiful Creatures.flac
-00:11:52 [info] [ffmpegdecoder] parsing data stream...
-00:11:52 [info] [ffmpegdecoder] found audio stream!
-00:11:52 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-00:11:52 [info] [Streams] found a decoder for /home/akash/Music/Illenium - Beautiful Creatures.flac
-00:11:52 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-00:11:54 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-00:12:53 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-00:12:53 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-00:12:53 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-00:14:15 [info] [ffmpegdecoder] finished decoding.
-00:14:17 [info] [GaplessTransport] stop
-00:14:17 [info] [Player] new instance created
-00:14:17 [info] [Stream] opening /home/akash/Music/Illenium - U & Me.flac
-00:14:17 [info] [LocalFileStream] opening file: /home/akash/Music/Illenium - U & Me.flac
-00:14:17 [info] [ffmpegdecoder] parsing data stream...
-00:14:17 [info] [ffmpegdecoder] found audio stream!
-00:14:17 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
-00:14:17 [info] [Streams] found a decoder for /home/akash/Music/Illenium - U & Me.flac
-00:14:17 [warning] [ffmpegdecoder] invalid packet detected, discarding.
-00:15:17 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
-00:15:17 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
-00:15:17 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
-00:16:58 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
-00:16:58 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
-00:16:58 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
-00:16:58 [info] [GaplessTransport] stop
+21:57:03 [info] [LOG SESSION] ---------- START ----------
+21:57:03 [info] [PluginFactory] loading plugins
+21:57:03 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsupereqdsp.so
+21:57:03 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpipewireout.so
+21:57:03 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libmpris.so
+21:57:03 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libportaudioout.so
+21:57:03 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libtaglibreader.so
+21:57:03 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libhttpdatastream.so
+21:57:04 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libstockencoders.so
+21:57:04 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libserver.so
+21:57:04 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsndioout.so
+21:57:04 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libopenmptdecoder.so
+21:57:04 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libalsaout.so
+21:57:04 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libgmedecoder.so
+21:57:04 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libffmpegdecoder.so
+21:57:04 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libnullout.so
+21:57:04 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpulseout.so
+21:57:04 [info] [PortAudioOut] Pa_Initialize() return code: 0
+21:57:04 [info] [PipeWireOut] shutdown started
+21:57:04 [info] [PipeWireOut] shutdown complete
+21:57:04 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
+21:57:04 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
+21:57:04 [info] [PortAudioOut] Pa_Terminate() return code: 0
+21:57:04 [info] [Indexer] indexer source 155697690 running...
+21:57:04 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:57:04 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:57:04 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+21:57:04 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
+21:57:04 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
+21:57:04 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
+21:57:04 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+21:57:04 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+21:57:04 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+21:57:04 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:57:04 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+21:57:04 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+21:57:04 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+21:57:04 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:57:04 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+21:57:04 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+21:57:04 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+21:57:04 [info] [Indexer] indexer source 155697690 finished
+21:57:04 [info] [Indexer] indexer source -1303229654 running...
+21:57:04 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+21:57:04 [info] [GaplessTransport] starting track at /home/akash/Music/Ludwig Goransson - Can You Hear The Music.flac
+21:57:04 [info] [Indexer] indexer source -1303229654 finished
+21:57:04 [info] [Indexer] scanning /home/akash/Music/
+21:57:04 [info] [Player] new instance created
+21:57:04 [info] [GaplessTransport] stop
+21:57:04 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:57:04 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:57:04 [info] [Stream] opening /home/akash/Music/Ludwig Goransson - Can You Hear The Music.flac
+21:57:04 [info] [LocalFileStream] opening file: /home/akash/Music/Ludwig Goransson - Can You Hear The Music.flac
+21:57:04 [info] [ffmpegdecoder] parsing data stream...
+21:57:04 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:57:04 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+21:57:04 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+21:57:04 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+21:57:04 [info] [Indexer] scan completed successfully
+21:57:04 [info] [Indexer] cleanup 1/2
+21:57:04 [info] [Indexer] cleanup 2/2
+21:57:04 [info] [Indexer] optimizing
+21:57:04 [info] [LocalLibrary] query 'SearchTrackListQuery' enqueued
+21:57:04 [info] [Indexer] done!
+21:57:04 [info] [LocalLibrary] query 'SearchTrackListQuery' running
+21:57:04 [info] [LocalLibrary] query 'SearchTrackListQuery' finished with status=4
+21:57:04 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+21:57:04 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+21:57:04 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+21:57:04 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:57:04 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:57:04 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:57:04 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:57:04 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:57:04 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+21:57:04 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:57:04 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:57:04 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+21:57:05 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+21:57:05 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+21:57:05 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+21:57:05 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:57:05 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:57:05 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:57:05 [info] [ffmpegdecoder] found audio stream!
+21:57:05 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+21:57:05 [info] [Streams] found a decoder for /home/akash/Music/Ludwig Goransson - Can You Hear The Music.flac
+21:57:05 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+21:57:05 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+21:57:05 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+21:57:05 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+21:57:05 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:57:05 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:57:05 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:57:06 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+21:57:06 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+21:57:06 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+21:57:06 [info] [GaplessTransport] starting track at /home/akash/Music/Martin Garrix - Scared to Be Lonely.flac
+21:57:06 [info] [Player] new instance created
+21:57:06 [info] [GaplessTransport] stop
+21:57:06 [info] [Stream] opening /home/akash/Music/Martin Garrix - Scared to Be Lonely.flac
+21:57:06 [info] [LocalFileStream] opening file: /home/akash/Music/Martin Garrix - Scared to Be Lonely.flac
+21:57:06 [info] [ffmpegdecoder] parsing data stream...
+21:57:06 [info] [ffmpegdecoder] found audio stream!
+21:57:06 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+21:57:06 [info] [Streams] found a decoder for /home/akash/Music/Martin Garrix - Scared to Be Lonely.flac
+21:57:06 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+21:57:11 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
+21:57:11 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
+21:57:11 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
+21:57:11 [info] [GaplessTransport] stop

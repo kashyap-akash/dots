@@ -1,11 +1,12 @@
 #!/bin/sh
 
-wall=$(find ~/Pictures/Wallpapers/sunset-awesome.jpg)
+wall=$(find ~/Pictures/Wallpapers/snowy-japan.jpg)
 
 
-#wall1=$(find ~/Pictures/Wallpapers/wallhaven-rrodj7.jpg)
+#wall1=$(find ~/Pictures/Wallpapers/sunset-awesome.jpg)
 #add this as wallpaper
-xwallpaper --zoom $wall 
+xwallpaper --zoom $wall
+xrandr --output eDP-1 --set "Broadcast RGB" "Full"
 #generate colour scheme
 wal -c
 wal -i $wall
