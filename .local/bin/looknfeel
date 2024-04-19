@@ -1,6 +1,6 @@
 #!/bin/sh
 
-wall=$(find ~/Pictures/Wallpapers/snowy-japan.jpg)
+wall=$(find ~/Pictures/Wallpapers/budhaa.png)
 
 
 #wall1=$(find ~/Pictures/Wallpapers/sunset-awesome.jpg)
@@ -11,3 +11,4 @@ xrandr --output eDP-1 --set "Broadcast RGB" "Full"
 wal -c
 wal -i $wall
 xdotool key super+F5
+compfy

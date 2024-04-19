@@ -16,7 +16,7 @@
     horizontal_padding = 15
     text_icon_padding = 15
     frame_width = 1
-    frame_color = "#B3C3B8"
+    frame_color = "#9BDBFB"
     separator_color = frame
     sort = yes
     idle_threshold = 100
@@ -55,21 +55,23 @@
 
 
 [urgency_low]
-    foreground = "#7586B8"
+    foreground = "#9BDBFB"
     background = "#0A0B14"
-    frame_color = "#7586B8"
+    frame_color = "#9BDBFB"
+    highlight = "#9BDBFB"
     timeout = 10
     icon = ~/.config/dunst/images/notification.png
 
 [urgency_normal]
     background = "#0A0B14"
-    foreground = "#7586B8"
-    frame_color ="#7586B8"
+    foreground = "#9BDBFB"
+    frame_color ="#9BDBFB"
+    highlight = "#9BDBFB"
     timeout = 10
     icon = ~/.config/dunst/images/notification.png
 
 [urgency_critical]
     background = "#0A0B14"
-    frame_color ="#B3C3B8"
+    frame_color ="#9BDBFB"
     timeout = 0
     icon = ~/.config/dunst/images/notification.png

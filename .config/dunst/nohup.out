@@ -1,0 +1,26 @@
+WARNING: No icon found in path: 'volume-up'
+WARNING: No icon found in path: 'volume-up'
+WARNING: No icon found in path: 'volume-up'
+WARNING: No icon found in path: 'volume-down'
+WARNING: No icon found in path: 'volume-down'
+WARNING: No icon found in path: 'volume-down'
+WARNING: No icon found in path: 'volume-down'
+WARNING: No icon found in path: 'volume-up'
+WARNING: No icon found in path: 'volume-up'
+WARNING: No icon found in path: 'volume-down'
+WARNING: No icon found in path: 'volume-down'
+[ 04/19/2024 18:45:06.149 open_config_file_at WARN ] This compositor has been renamed to "compfy", the old config file paths is deprecated. Please replace the "picom"s in the path with "compfy"
+
+[ 04/19/2024 18:45:06.149 open_config_file_at WARN ] If you are coming from Picom please see the GitHub wiki or "man compfy" in relation to the new features and changes made BEFORE making an Issue on GitHub
+[ 04/19/2024 18:45:06.153 session_init FATAL ERROR ] Another composite manager is already running
+WARNING: No icon found in path: 'volume-up'
+WARNING: No icon found in path: 'volume-up'
+WARNING: No icon found in path: 'volume-down'
+WARNING: No icon found in path: 'volume-down'
+WARNING: No icon found in path: 'volume-down'
+WARNING: No icon found in path: 'volume-down'
+WARNING: No icon found in path: 'volume-down'
+WARNING: No icon found in path: 'volume-down'
+WARNING: No icon found in path: 'volume-up'
+WARNING: No icon found in path: 'volume-down'
+X connection to :0 broken (explicit kill or server shutdown).
