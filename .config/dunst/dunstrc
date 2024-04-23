@@ -58,20 +58,17 @@
     foreground = "#9BDBFB"
     background = "#0A0B14"
     frame_color = "#9BDBFB"
-    highlight = "#9BDBFB"
     timeout = 10
     icon = ~/.config/dunst/images/notification.png
 
 [urgency_normal]
     background = "#0A0B14"
     foreground = "#9BDBFB"
-    frame_color ="#9BDBFB"
-    highlight = "#9BDBFB"
+    frame_color ="#7586B8"
     timeout = 10
     icon = ~/.config/dunst/images/notification.png
 
 [urgency_critical]
     background = "#0A0B14"
-    frame_color ="#9BDBFB"
+    frame_color ="#B3C3B8"
     timeout = 0
-    icon = ~/.config/dunst/images/notification.png

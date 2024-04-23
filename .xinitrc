@@ -1,7 +1,6 @@
-#!/bin/sh
+#!/bin/sh 
 looknfeel &
 sxhkd &
 exec dwmblocks &
 dunst &
-exec dwm 
-#exec awesome
+exec dwm
