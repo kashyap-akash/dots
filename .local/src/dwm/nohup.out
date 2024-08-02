@@ -1,0 +1,20 @@
+Usage: picom-trans [options] [+|-]opacity
+
+Options:
+  -h, --help                Print this help message.
+  -o, --opacity OPACITY     Specify the new opacity value in range 0-100 for the window. If
+                            prefixed with + or -, increment or decrement from the current
+                            opacity of the target window.
+
+Actions:
+  -g, --get                 Print current opacity of the target window.
+  -d, --delete              Delete opacity of the target window.
+  -t, --toggle              Toggle the target window's opacity, i.e. set if not already set
+                            and delete else.
+  -r, --reset               Reset opacity for all windows.
+
+Window Selection:
+  -s, --select              Select target window with mouse cursor. (DEFAULT)
+  -c, --current             Select the currently active window as target.
+  -n, --name WINDOW_NAME    Specify and try to match a window name.
+  -w, --window WINDOW_ID    Specify the window id of the target window.

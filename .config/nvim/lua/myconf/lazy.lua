@@ -18,8 +18,8 @@ local plugins = {
         'nvim-telescope/telescope.nvim',
         dependencies = { { 'nvim-lua/plenary.nvim' } } --ASYNCHRONISM IN LUA
     },
+    { 'akinsho/bufferline.nvim',         version = "*",      dependencies = 'nvim-tree/nvim-web-devicons' },
     { 'HiPhish/rainbow-delimiters.nvim' },
-    { 'theprimeagen/harpoon' },                                 --Fast A$$ Navigaton
     { 'nvim-tree/nvim-web-devicons' },
     { 'catppuccin/nvim',                 name = "catppuccin" }, --COLORSCHEME.....
     { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' }, --TS SYNTAX HIGHLIGHTING....
