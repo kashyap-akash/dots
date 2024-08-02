@@ -1,3 +1,4 @@
+# nvim: filetype=conf
 [global]
     monitor = 0
     follow = mouse
@@ -13,10 +14,10 @@
     shrink = no
     separator_height = 2
     padding = 15
-    horizontal_padding = 15
+    horizontal_padding = 20
     text_icon_padding = 15
-    frame_width = 1
-    frame_color = "#9BDBFB"
+    frame_width = 2
+    frame_color = "#AAA"
     separator_color = frame
     sort = yes
     idle_threshold = 100
@@ -55,20 +56,21 @@
 
 
 [urgency_low]
-    foreground = "#9BDBFB"
-    background = "#0A0B14"
-    frame_color = "#9BDBFB"
+    foreground = "#F4F4F4"
+    background = "#0D0D0D"
+    #frame_color = "#F4F4F4"
+    highlight ="#F4F4F4" 
     timeout = 10
-    icon = ~/.config/dunst/images/notification.png
 
 [urgency_normal]
-    background = "#0A0B14"
-    foreground = "#9BDBFB"
-    frame_color ="#7586B8"
+    background = "#0D0D0D"
+    foreground = "#F4F4F4"
+    #frame_color ="#F4F4F4"
+    highlight ="#F4F4F4" 
     timeout = 10
-    icon = ~/.config/dunst/images/notification.png
 
 [urgency_critical]
-    background = "#0A0B14"
-    frame_color ="#B3C3B8"
+    background = "#0D0D0D"
+    #frame_color ="#B3C3B8"
+    highlight ="#F4F4F4" 
     timeout = 0

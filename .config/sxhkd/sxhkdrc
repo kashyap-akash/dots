@@ -1,17 +1,15 @@
 # Reload sxhkd
 super + shift + Escape
-	killall sxhkd & sxhkd
+    pkill sxhkd && setsid sxhkd
 
 #VOLUME KEYS
 XF86AudioRaiseVolume
-	changevolume up
+	changevolume up 
 
 XF86AudioLowerVolume
-	changevolume down
-
+	changevolume down 
 XF86AudioMute
 	changevolume mute
-
 
 #BRIGHTNESS KEYS
 XF86MonBrightnessUp
@@ -24,18 +22,22 @@ XF86MonBrightnessDown
 super + Return
   st
 super + b 
-  brave --incognito
+    firefox --private-window
 super + shift + b 
-  brave 
-super + shift +a 
-  st -e musikcube
+    firefox 
+super + shift + a 
+    st -e musikcube
+super + shift + s
+    st -e  spt && spotifyd   
+super + control + s
+    st -e pkill spotifyd
 super + e
-  st -e lf
+    st -e lf
 super + shift + q
-  slock
+    slock
 super + shift + p
-  scrot --select --quality 100 ~/Pictures/Screenshots/%Y-%m-%d-%T-screenshot.jpg
+    scrot --select --quality 100 ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png
 super + control + p 
-  scrot --quality 100 ~/Pictures/Screenshots/%Y-%m-%d-%T-screenshot.jpg
+    scrot --quality 100 ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png
 super + shift + w
-  st -e nmtui
+    st -e nmtui

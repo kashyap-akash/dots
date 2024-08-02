@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
+# Add this to ~/.bashrc (or your $SHELL equivalent)
+export TERMINAL=/usr/local/bin/st
 export PATH=/home/akash/.local/bin:$PATH
 export PATH=/home/akash/.local/src:$PATH
+export GTK_THEME=Material-Black-Blueberry-LA
 #export JAVA_HOME=$(~/.sdkman/candidates/java/)
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -13,7 +16,7 @@ export WINE_LARGE_ADDRESS_AWARE=1
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -75,7 +78,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+#plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,12 +107,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias spotifyctl="playerctl --player=spotifyd"
+alias musikctl="playerctl --player=musikcube"
 alias cls="clear"
 alias ls="lsd --color=auto"
 #alias j="autojump"
 alias lf="lfub"
 alias chadwm='startx ~/.config/chadwm/scripts/run.sh'
-source /home/akash/Documents/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/akash/documents/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias terraria="~/Games/Terraria/start.sh"
 
 
@@ -119,3 +124,4 @@ alias terraria="~/Games/Terraria/start.sh"
 eval "$(dircolors -p | \
     sed 's/ 4[0-9];/ 01;/; s/;4[0-9];/;01;/g; s/;4[0-9] /;01 /' | ##TO REMOVE ALL BACKGROUND HIGHLIGHTING##    
     dircolors /dev/stdin)"
+source /usr/share/nvm/init-nvm.sh

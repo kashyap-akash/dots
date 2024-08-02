@@ -89,7 +89,7 @@
     }                                                                          \
   }
 
-#define OPAQUE                  0xffU
+#define OPAQUE 0xffU
 
 /* enums */
 enum { CurNormal, CurResize, CurMove, CurLast }; /* cursor */
@@ -171,7 +171,7 @@ typedef struct {
 } Layout;
 
 struct Monitor {
-  char ltsymbol[16];
+  /* char ltsymbol[16]; */
   float mfact;
   int nmaster;
   int num;
@@ -466,7 +466,7 @@ void arrange(Monitor *m) {
 }
 
 void arrangemon(Monitor *m) {
-  strncpy(m->ltsymbol, m->lt[m->sellt]->symbol, sizeof m->ltsymbol);
+  /* strncpy(m->ltsymbol, m->lt[m->sellt]->symbol, sizeof m->ltsymbol); */
   if (m->lt[m->sellt]->arrange)
     m->lt[m->sellt]->arrange(m);
 }
@@ -544,7 +544,8 @@ void buttonpress(XEvent *e) {
       occ |= c->tags == 255 ? 0 : c->tags;
     do {
       /* do not reserve space for vacant tags */
-      if (!(occ & 1 << i || m->tagset[m->seltags] & 1 << i))
+      // if (!(occ & 1 << i || m->tagset[m->seltags] & 1 << i))
+      if (!(m->tagset[m->seltags] & 1 << i))
         continue;
 
       x += TEXTW(tags[i]);
@@ -746,7 +747,7 @@ Monitor *createmon(void) {
   m->gappx = gappx;
   m->lt[0] = &layouts[0];
   m->lt[1] = &layouts[1 % LENGTH(layouts)];
-  strncpy(m->ltsymbol, layouts[0].symbol, sizeof m->ltsymbol);
+  /* strncpy(m->ltsymbol, layouts[0].symbol, sizeof m->ltsymbol); */
   return m;
 }
 
@@ -800,10 +801,24 @@ Monitor *dirtomon(int dir) {
 
 void drawbar(Monitor *m) {
   int x, w, tw = 0;
+  int tags_with_windows = 0;
   int boxs = drw->fonts->h / 9;
   int boxw = drw->fonts->h / 6 + 2;
   unsigned int i, occ = 0, urg = 0;
   Client *c;
+
+  // Count the number of tags with windows
+  for (c = m->clients; c; c = c->next)
+    occ |= c->tags;
+
+  for (i = 0; i < LENGTH(tags); i++) {
+    if (occ & 1 << i)
+      tags_with_windows++;
+  }
+
+  // Prepare the string to display
+  char tags_count_str[15];
+  snprintf(tags_count_str, sizeof(tags_count_str), "[%d]=", tags_with_windows);
 
   /* draw status first so it can be overdrawn by tags later */
   if (m == selmon) { /* status is only drawn on selected monitor */
@@ -819,21 +834,42 @@ void drawbar(Monitor *m) {
   }
   x = 0;
   for (i = 0; i < LENGTH(tags); i++) {
-    w = TEXTW(tags[i]);
-    drw_setscheme(
-        drw, scheme[m->tagset[m->seltags] & 1 << i ? SchemeSel : SchemeNorm]);
-    drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], urg & 1 << i);
-    /* do not draw vacant tags */
-    if (!(occ & 1 << i || m->tagset[m->seltags] & 1 << i))
+    /* Only draw the current tag */
+    if (!(m->tagset[m->seltags] & 1 << i))
       continue;
-
+    w = TEXTW(tags[i]);
+    drw_setscheme(drw, scheme[SchemeSel]);
+    drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], urg & 1 << i);
     x += w;
   }
-  w = blw = TEXTW(m->ltsymbol);
-  drw_setscheme(
-      drw,
-      scheme[SchemeNorm]); // these 3 lines to enable or disable drawing layouts
-  x = drw_text(drw, x, 0, w, bh, lrpad / 2, m->ltsymbol, 0);
+
+  // Draw the number of tags with windows
+  if (tags_with_windows >= 1) {
+    drw_setscheme(drw, scheme[SchemeNorm]);
+    w = TEXTW(tags_count_str);
+    drw_text(drw, x, 0, w, bh, lrpad / 2, tags_count_str, 0);
+    x += w;
+  }
+  /* for (i = 0; i < LENGTH(tags); i++) { */
+  /*   w = TEXTW(tags[i]); */
+  /*   drw_setscheme( */
+  /*       drw, scheme[m->tagset[m->seltags] & 1 << i ? SchemeSel :
+   * SchemeNorm]); */
+  /*   drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], urg & 1 << i); */
+  /*    do not draw vacant tags */
+  /*   if (!(occ & 1 << i || m->tagset[m->seltags] & 1 << i)) */
+  /*     continue; */
+  /**/
+  /*   x += w; */
+  /* } */
+
+  // Layout Symbols !!!
+  /* w = blw = TEXTW(m->ltsymbol); */
+  /* drw_setscheme( */
+  /*     drw, */
+  /*     scheme[SchemeNorm]); // these 3 lines to enable or disable drawing
+   * layouts */
+  /* x = drw_text(drw, x, 0, w, bh, lrpad / 2, m->ltsymbol, 0); */
 
   if ((w = m->ww - tw - x) > bh) {
     if (m->sel) {
@@ -1221,8 +1257,8 @@ void monocle(Monitor *m) {
   for (c = m->clients; c; c = c->next)
     if (ISVISIBLE(c))
       n++;
-  if (n > 0) /* override layout symbol */
-    snprintf(m->ltsymbol, sizeof m->ltsymbol, "[%d]", n);
+  /* if (n > 0)  override layout symbol */
+  /* snprintf(m->ltsymbol, sizeof m->ltsymbol, "[%d]", n); */
   for (c = nexttiled(m->clients); c; c = nexttiled(c->next))
     resize(c, m->wx, m->wy, m->ww - 2 * c->bw, m->wh - 2 * c->bw, 0);
 }
@@ -1388,9 +1424,14 @@ void resizeclient(Client *c, int x, int y, int w, int h) {
 
 void resizemouse(const Arg *arg) {
   int ocx, ocy, nw, nh;
+  int ocx2, ocy2, nx, ny;
   Client *c;
   Monitor *m;
   XEvent ev;
+  int horizcorner, vertcorner;
+  int di;
+  unsigned int dui;
+  Window dummy;
   Time lasttime = 0;
 
   if (!(c = selmon->sel))
@@ -1400,11 +1441,18 @@ void resizemouse(const Arg *arg) {
   restack(selmon);
   ocx = c->x;
   ocy = c->y;
+  ocx2 = c->x + c->w;
+  ocy2 = c->y + c->h;
   if (XGrabPointer(dpy, root, False, MOUSEMASK, GrabModeAsync, GrabModeAsync,
                    None, cursor[CurResize]->cursor, CurrentTime) != GrabSuccess)
     return;
-  XWarpPointer(dpy, None, c->win, 0, 0, 0, 0, c->w + c->bw - 1,
-               c->h + c->bw - 1);
+  if (!XQueryPointer(dpy, c->win, &dummy, &dummy, &di, &di, &nx, &ny, &dui))
+    return;
+  horizcorner = nx < c->w / 2;
+  vertcorner = ny < c->h / 2;
+  XWarpPointer(dpy, None, c->win, 0, 0, 0, 0,
+               horizcorner ? (-c->bw) : (c->w + c->bw - 1),
+               vertcorner ? (-c->bw) : (c->h + c->bw - 1));
   do {
     XMaskEvent(dpy, MOUSEMASK | ExposureMask | SubstructureRedirectMask, &ev);
     switch (ev.type) {
@@ -1417,9 +1465,13 @@ void resizemouse(const Arg *arg) {
       if ((ev.xmotion.time - lasttime) <= (1000 / 60))
         continue;
       lasttime = ev.xmotion.time;
+      nx = horizcorner ? ev.xmotion.x : c->x;
+      ny = vertcorner ? ev.xmotion.y : c->y;
+      nw = MAX(horizcorner ? (ocx2 - nx) : (ev.xmotion.x - ocx - 2 * c->bw + 1),
+               1);
+      nh = MAX(vertcorner ? (ocy2 - ny) : (ev.xmotion.y - ocy - 2 * c->bw + 1),
+               1);
 
-      nw = MAX(ev.xmotion.x - ocx - 2 * c->bw + 1, 1);
-      nh = MAX(ev.xmotion.y - ocy - 2 * c->bw + 1, 1);
       if (c->mon->wx + nw >= selmon->wx &&
           c->mon->wx + nw <= selmon->wx + selmon->ww &&
           c->mon->wy + nh >= selmon->wy &&
@@ -1429,12 +1481,13 @@ void resizemouse(const Arg *arg) {
           togglefloating(NULL);
       }
       if (!selmon->lt[selmon->sellt]->arrange || c->isfloating)
-        resize(c, c->x, c->y, nw, nh, 1);
+        resize(c, nx, ny, nw, nh, 1);
       break;
     }
   } while (ev.type != ButtonRelease);
-  XWarpPointer(dpy, None, c->win, 0, 0, 0, 0, c->w + c->bw - 1,
-               c->h + c->bw - 1);
+  XWarpPointer(dpy, None, c->win, 0, 0, 0, 0,
+               horizcorner ? (-c->bw) : (c->w + c->bw - 1),
+               vertcorner ? (-c->bw) : (c->h + c->bw - 1));
   XUngrabPointer(dpy, CurrentTime);
   while (XCheckMaskEvent(dpy, EnterWindowMask, &ev))
     ;
@@ -1596,8 +1649,8 @@ void setlayout(const Arg *arg) {
     selmon->sellt ^= 1;
   if (arg && arg->v)
     selmon->lt[selmon->sellt] = (Layout *)arg->v;
-  strncpy(selmon->ltsymbol, selmon->lt[selmon->sellt]->symbol,
-          sizeof selmon->ltsymbol);
+  /* strncpy(selmon->ltsymbol, selmon->lt[selmon->sellt]->symbol, */
+  /* sizeof selmon->ltsymbol); */
   if (selmon->sel)
     arrange(selmon);
   else
@@ -1634,7 +1687,8 @@ void setup(void) {
   if (!drw_fontset_create(drw, fonts, LENGTH(fonts)))
     die("no fonts could be loaded.");
   lrpad = drw->fonts->h;
-  bh = drw->fonts->h + 2;
+  // bh = drw->fonts->h + 2;
+  bh = user_bh ? user_bh : drw->fonts->h + 2;
   updategeom();
 
   /* init atoms */
