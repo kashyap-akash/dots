@@ -8,6 +8,6 @@ wall=$(find ~/pictures/wallpapers/tatakae.png)
 xwallpaper --zoom $wall
 xrandr --output eDP-1 --set "Broadcast RGB" "Full"
 #generate colour scheme
-wal -c
+#wal -c
 wal -i $wall
 xdotool key super+F5

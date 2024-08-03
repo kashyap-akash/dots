@@ -18,3 +18,233 @@ Window Selection:
   -c, --current             Select the currently active window as target.
   -n, --name WINDOW_NAME    Specify and try to match a window name.
   -w, --window WINDOW_ID    Specify the window id of the target window.
+picom: unrecognized option '--verbose'
+picom (vgit-df4c6)
+Standalone X11 compositor
+Please report bugs to https://github.com/yshui/picom
+
+Usage: picom [OPTION]...
+
+OPTIONS:
+        --config                  Path to the configuration file.
+    -h, --help                    Print this help message and exit.
+    -r, --shadow-radius           The blur radius for shadows. (default 12)
+    -o, --shadow-opacity          The translucency for shadows. (default .75)
+    -l, --shadow-offset-x         The left offset for shadows. (default -15)
+    -t, --shadow-offset-y         The top offset for shadows. (default -15)
+    -I, --fade-in-step            Opacity change between steps while fading in. 
+                                  (default 0.028)
+    -O, --fade-out-step           Opacity change between steps while fading 
+                                  out. (default 0.03)
+    -D, --fade-delta              The time between steps in a fade in 
+                                  milliseconds. (default 10)
+    -m, --menu-opacity            The opacity for menus. (default 1.0)
+    -c, --shadow                  Enabled client-side shadows on windows.
+        --clear-shadow            Don't draw shadow behind the window.
+    -f, --fading                  Fade windows in/out when opening/closing and 
+                                  when opacity changes, unless 
+                                  --no-fading-openclose is used.
+    -i, --inactive-opacity        Opacity of inactive windows. (0.1 - 1.0)
+    -e, --frame-opacity           Opacity of window titlebars and borders. (0.1 
+                                  - 1.0)
+    -b, --daemon                  Daemonize process.
+        --shadow-red              Red color value of shadow (0.0 - 1.0, 
+                                  defaults to 0).
+        --shadow-green            Green color value of shadow (0.0 - 1.0, 
+                                  defaults to 0).
+        --shadow-blue             Blue color value of shadow (0.0 - 1.0, 
+                                  defaults to 0).
+        --inactive-opacity-override  
+                                  Inactive opacity set by -i overrides value of 
+                                  _NET_WM_WINDOW_OPACITY.
+        --inactive-dim            Dim inactive windows. (0.0 - 1.0, defaults to 
+                                  0)
+        --mark-wmwin-focused      Try to detect WM windows and mark them as 
+                                  active.
+        --shadow-exclude          Exclude conditions for shadows.
+        --mark-ovredir-focused    Mark windows that have no WM frame as active.
+        --no-fading-openclose     Do not fade on window open/close.
+        --shadow-ignore-shaped    Do not paint shadows on shaped windows. 
+                                  (Deprecated, use --shadow-exclude 
+                                  'bounding_shaped' or --shadow-exclude 
+                                  'bounding_shaped && !rounded_corners' 
+                                  instead.)
+        --detect-rounded-corners  Try to detect windows with rounded corners 
+                                  and don't consider them shaped windows. 
+                                  Affects --shadow-ignore-shaped, 
+                                  --unredir-if-possible, and possibly others. 
+                                  You need to turn this on manually if you want 
+                                  to match against rounded_corners in 
+                                  conditions.
+        --detect-client-opacity   Detect _NET_WM_WINDOW_OPACITY on client 
+                                  windows, useful for window managers not 
+                                  passing _NET_WM_WINDOW_OPACITY of client 
+                                  windows to frame
+        --vsync                   Enable VSync
+        --crop-shadow-to-monitor  Crop shadow of a window fully on a particular 
+                                  monitor to that monitor. This is currently 
+                                  implemented using the X RandR extension
+        --use-ewmh-active-win     Use _NET_WM_ACTIVE_WINDOW on the root window 
+                                  to determine which window is focused instead 
+                                  of using FocusIn/Out events
+        --unredir-if-possible     Unredirect all windows if a full-screen 
+                                  opaque window is detected, to maximize 
+                                  performance for full-screen applications.
+        --focus-exclude=COND      Specify a list of conditions of windows that 
+                                  should always be considered focused.
+        --inactive-dim-fixed      Use fixed inactive dim value.
+        --detect-transient        Use WM_TRANSIENT_FOR to group windows, and 
+                                  consider windows in the same group focused at 
+                                  the same time.
+        --detect-client-leader    Use WM_CLIENT_LEADER to group windows, and 
+                                  consider windows in the same group focused at 
+                                  the same time. This usually means windows 
+                                  from the same application will be considered 
+                                  focused or unfocused at the same time. 
+                                  WM_TRANSIENT_FOR has higher priority if 
+                                  --detect-transient is enabled, too.
+        --blur-background         Blur background of semi-transparent / ARGB 
+                                  windows. May impact performance
+        --blur-background-frame   Blur background of windows when the window 
+                                  frame is not opaque. Implies 
+                                  --blur-background.
+        --blur-background-fixed   Use fixed blur strength instead of adjusting 
+                                  according to window opacity.
+        --dbus                    Enable remote control via D-Bus. See the 
+                                  D-BUS API section in the man page for more 
+                                  details.
+        --invert-color-include=COND  
+                                  Specify a list of conditions of windows that 
+                                  should be painted with inverted color.
+        --backend                 Backend. Possible values are: xrender, glx
+        --benchmark               Benchmark mode. Repeatedly paint until 
+                                  reaching the specified cycles.
+        --benchmark-wid           Specify window ID to repaint in benchmark 
+                                  mode. If omitted or is 0, the whole screen is 
+                                  repainted.
+        --blur-background-exclude=COND  
+                                  Exclude conditions for background blur.
+        --active-opacity          Default opacity for active windows. (0.0 - 
+                                  1.0)
+        --fade-exclude=COND       Exclude conditions for fading.
+        --blur-kern               Specify the blur convolution kernel, see man 
+                                  page for more details
+        --opacity-rule=OPACITY:COND  
+                                  Specify a list of opacity rules, see man page 
+                                  for more details
+        --unredir-if-possible-exclude=COND  
+                                  Conditions of windows that shouldn't be 
+                                  considered full-screen for unredirecting 
+                                  screen.
+        --unredir-if-possible-delay  
+                                  Delay before unredirecting the window, in 
+                                  milliseconds. Defaults to 0.
+        --write-pid-path=PATH     Write process ID to a file.
+        --xrender-sync-fence      Additionally use X Sync fence to sync 
+                                  clients' draw calls. Needed on nvidia-drivers 
+                                  with GLX backend for some users.
+        --no-fading-destroyed-argb  
+                                  Do not fade destroyed ARGB windows with WM 
+                                  frame. Workaround bugs in Openbox, Fluxbox, 
+                                  etc.
+        --force-win-blend         Force all windows to be painted with 
+                                  blending. Useful if you have a custom shader 
+                                  that could turn opaque pixels transparent.
+        --version                 Print version number and exit.
+        --log-level               Log level, possible values are: trace, debug, 
+                                  info, warn, error
+        --log-file                Path to the log file.
+        --use-damage              Render only the damaged (changed) part of the 
+                                  screen
+        --no-use-damage           Disable the use of damage information. This 
+                                  cause the whole screen to beredrawn every 
+                                  time, instead of the part of the screen that 
+                                  has actually changed. Potentially degrades 
+                                  the performance, but might fix some 
+                                  artifacts.
+        --no-vsync                Disable VSync
+        --max-brightness          Dims windows which average brightness is 
+                                  above this threshold. Requires 
+                                  --no-use-damage. (default: 1.0, meaning no 
+                                  dimming)
+        --transparent-clipping    Make transparent windows clip other windows 
+                                  like non-transparent windows do, instead of 
+                                  blending on top of them
+        --transparent-clipping-exclude=COND  
+                                  Specify a list of conditions of windows that 
+                                  should never have transparent clipping 
+                                  applied. Useful for screenshot tools, where 
+                                  you need to be able to see through 
+                                  transparent parts of the window.
+        --blur-method             The algorithm used for background bluring. 
+                                  Available choices are: 'none' to disable, 
+                                  'gaussian', 'box' or 'kernel' for custom 
+                                  convolution blur with --blur-kern. Note: 
+                                  'gaussian' and 'box' is not supported by 
+                                  --legacy-backends.
+        --blur-size               The radius of the blur kernel for 'box' and 
+                                  'gaussian' blur method.
+        --blur-deviation          The standard deviation for the 'gaussian' 
+                                  blur method.
+        --blur-strength           The strength level of the 'dual_kawase' blur 
+                                  method.
+        --shadow-color            Color of shadow, as a hex RGB string 
+                                  (defaults to #000000)
+        --corner-radius           Sets the radius of rounded window corners. 
+                                  When > 0, the compositor will round the 
+                                  corners of windows. (defaults to 0).
+        --rounded-corners-exclude=COND  
+                                  Exclude conditions for rounded corners.
+        --corner-radius-rules=RADIUS:COND  
+                                  Window rules for specific rounded corner 
+                                  radii.
+        --clip-shadow-above       Specify a list of conditions of windows to 
+                                  not paint a shadow over, such as a dock 
+                                  window.
+        --window-shader-fg=PATH   Specify GLSL fragment shader path for 
+                                  rendering window contents. Does not work when 
+                                  `--legacy-backends` is enabled. See man page 
+                                  for more details.
+        --window-shader-fg-rule=PATH:COND  
+                                  Specify GLSL fragment shader path for 
+                                  rendering window contents using patterns. 
+                                  Pattern should be in the format of 
+                                  SHADER_PATH:PATTERN, similar to 
+                                  --opacity-rule. SHADER_PATH can be "default", 
+                                  in which case the default shader will be 
+                                  used. Does not work when --legacy-backends is 
+                                  enabled. See man page for more details
+        --dithered-present        Use higher precision during rendering, and 
+                                  apply dither when presenting the rendered 
+                                  screen. Reduces banding artifacts, but might 
+                                  cause performance degradation. Only works 
+                                  with OpenGL.
+        --no-frame-pacing         Disable frame pacing. This might increase the 
+                                  latency.
+        --legacy-backends         Use deprecated version of the backends.
+        --monitor-repaint         Highlight the updated area of the screen. For 
+                                  debugging.
+        --diagnostics             Print diagnostic information
+        --debug-mode              Render into a separate window, and don't take 
+                                  over the screen. Useful when you want to 
+                                  attach a debugger to picom
+        --no-ewmh-fullscreen      Do not use EWMH to detect fullscreen windows. 
+                                  Reverts to checking if a window is fullscreen 
+                                  based only on its size and coordinates.
+        --animations              Enable/disable animations.
+        --animation-stiffness-in-tag  
+                                  Animation speed in current tag (float).
+        --animation-stiffness-tag-change  
+                                  Animation speed when tag changes (change to a 
+                                  new desktop).
+        --animation-dampening     Animation dampening ratio (spring dampening 
+                                  as an example).
+        --animation-window-mass   Animation window mass (lower mass makes 
+                                  animations bumpy).
+        --animation-clamping      Enable/disable animation clamping. Disabling 
+                                  increases performance
+        --animation-for-open-window  
+                                  Set animation for opening window (Check 
+                                  sample.conf for options).
+        --animation-for-transient-window  
+                                  Set animation for transient (child) windows.

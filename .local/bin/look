@@ -7,5 +7,5 @@ wall=$(find ~/pictures/wallpapers/eren.jpg)
 #add this as wallpaper
 swww img $wall 
 #generate colour scheme
-wal -c
+#wal -c
 wal -i $wall
