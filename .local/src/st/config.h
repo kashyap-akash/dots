@@ -1,22 +1,9 @@
-/* See LICENSE file for copyright and license details. */
 
-/*
- * appearance
- *
- * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
- */
 static char *font = "JetBrainsMonoNerdFont-Regular:pixelsize=16:antialias=true:autohint=true";
 static char *font2[] = { "JetBrainsMonoNerdFont-Regular=16:antialias=true:autohint=true" };
 static int borderpx = 10;
 
-/*
- * What program is execed by st depends of these precedence rules:
- * 1: program passed with -e
- * 2: scroll and/or utmp
- * 3: SHELL environment variable
- * 4: value of shell in /etc/passwd
- * 5: value of shell in config.h
- */
+
 static char *shell = "/bin/sh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */

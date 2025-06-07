@@ -4,17 +4,17 @@
     "spacing": 1, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["custom/cava"],
-    "modules-right": ["custom/music","custom/memory","custom/cpu","pulseaudio","network", "battery","custom/clock"],
+    "modules-center": [],
+    "modules-right": ["custom/memory","custom/cpu","pulseaudio","network", "battery","custom/clock"],
     // Modules configuration
         "hyprland/workspaces": {
           	"format": "{icon}",
           	"format-icons": {
-	        	"1":" 󰣇 ",
-	        	"2":"  ",
-	        	"3":"  ",
-		        "4":"  ",
-		        "5":"  ",
+	        	"1":"1",
+	        	"2":"2",
+	        	"3":"3",
+		        "4":"4",
+		        "5":"5",
             "urgent": ""
             		       
 	},
@@ -22,42 +22,28 @@
              "*": 1, // 5 workspaces by default on every monitor
               }
 },
-
-        "custom/music":{
-         "exec":"~/.local/bin/sb-music",
-         "interval": 1
-       },
- 
-      
-        
-
-
-
        "custom/clock":{    
-         "exec": "~/.local/bin/sb-clock",
-         "on-click-right": "st -e calcurse",
+         "exec": "~/.local/bin/wb-clock",
          "interval": 1
        },
 
        "custom/battery":{
-         "exec":"~/.local/bin/sb-battery",
+         "exec":"~/.local/bin/wb-battery",
          "interval": 1
        },
      
         "custom/memory":{
-         "exec":"~/.local/bin/sb-memory",
+         "exec":"~/.local/bin/wb-memory",
          "interval": 3
        },
         "custom/network":{
         "format-alt": "{essid} -> {ifname}: {ipaddr}", 
-        "on-click-right": "st -e nmtui",
         "exec":"~/.local/bin/sb-internet",
         "interval": 3
        },
 
          "custom/cpu": {
             "exec": "~/.local/bin/sb-cpu",
-            "on-click-right": "st -e gotop",
             "interval": 3
           },
 
@@ -95,7 +81,7 @@
         "format-ethernet": "  {ipaddr}/{cidr}",
         "tooltip-format": "  {ifname} via {gwaddr}",
         "format-linked": "  {ifname} (No IP)",
-        "format-disconnected": "❎ Disconnected",
+        "format-disconnected": " ",
         "format-alt": "{essid} -> {ifname}: {ipaddr}",
         "on-click-right": "st -e nmtui",
         "interval": 5

@@ -1,6 +1,3 @@
-local opts = { noremap = true, silent = true }
-local term_opts = { silent = true }
-
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") --MOVE SELECTED,

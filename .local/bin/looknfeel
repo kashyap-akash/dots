@@ -1,6 +1,6 @@
 #!/bin/sh
 
-wall=$(find ~/pictures/wallpapers/tatakae.png)
+wall=$(find ~/pictures/wallpapers/mlc.png)
 
 
 #wall1=$(find ~/Pictures/Wallpapers/sunset-awesome.jpg)

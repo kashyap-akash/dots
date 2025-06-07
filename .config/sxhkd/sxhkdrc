@@ -1,17 +1,34 @@
 # Reload sxhkd
+
 super + shift + Escape
     pkill sxhkd && setsid sxhkd
 
-#VOLUME KEYS
+#MEDIA KEYS
+
 XF86AudioRaiseVolume
 	changevolume up 
 
 XF86AudioLowerVolume
 	changevolume down 
+
 XF86AudioMute
 	changevolume mute
 
+XF86AudioPlay
+    playerctl play-pause
+
+XF86AudioPause
+    playerctl pause
+
+XF86AudioNext
+    playerctl next
+
+XF86AudioPrev
+    playerctl previous
+
+
 #BRIGHTNESS KEYS
+
 XF86MonBrightnessUp
 	changebrightness up
 
@@ -19,8 +36,9 @@ XF86MonBrightnessDown
 	changebrightness down
 
 #DESKTOP KEYS
+
 super + Return
-  st
+    st
 super + b 
     firefox --private-window
 super + shift + b 
@@ -28,9 +46,7 @@ super + shift + b
 super + shift + a 
     st -e musikcube
 super + shift + s
-    st -e  spt && spotifyd   
-super + control + s
-    st -e pkill spotifyd
+    st -e ncspot   
 super + e
     st -e lf
 super + shift + q

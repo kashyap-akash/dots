@@ -1,0 +1,71 @@
+[2024-12-20 22:33:51.605] [info] Using configuration file /home/akash/.config/waybar/config
+[2024-12-20 22:33:51.607] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-12-20 22:33:51.607] [info] Using CSS file /home/akash/.config/waybar/style.css
+[2024-12-20 22:33:51.611] [info] Hyprland IPC starting
+[2024-12-20 22:33:51.612] [info] Loading persistent workspaces from Waybar config
+[2024-12-20 22:33:51.612] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-20 22:33:51.655] [warning] Requested height: 20 is less than the minimum height: 24 required by the modules
+[2024-12-20 22:33:51.655] [info] Bar configured (width: 1920, height: 24) for output: eDP-1
+[2024-12-20 22:34:19.392] [info] Quitting.
+waybar: no process found
+[2024-12-20 22:34:24.438] [info] Using configuration file /home/akash/.config/waybar/config
+[2024-12-20 22:34:24.439] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-12-20 22:34:24.439] [info] Using CSS file /home/akash/.config/waybar/style.css
+[2024-12-20 22:34:24.444] [info] Hyprland IPC starting
+[2024-12-20 22:34:24.445] [info] Loading persistent workspaces from Waybar config
+[2024-12-20 22:34:24.445] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-20 22:34:24.485] [warning] Requested height: 20 is less than the minimum height: 24 required by the modules
+[2024-12-20 22:34:24.485] [info] Bar configured (width: 1920, height: 24) for output: eDP-1
+[2024-12-20 22:34:36.001] [info] Quitting.
+waybar: no process found
+[2024-12-20 22:34:38.074] [info] Using configuration file /home/akash/.config/waybar/config
+[2024-12-20 22:34:38.075] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-12-20 22:34:38.075] [info] Using CSS file /home/akash/.config/waybar/style.css
+[2024-12-20 22:34:38.080] [info] Hyprland IPC starting
+[2024-12-20 22:34:38.081] [info] Loading persistent workspaces from Waybar config
+[2024-12-20 22:34:38.081] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-20 22:34:38.121] [warning] Requested height: 20 is less than the minimum height: 24 required by the modules
+[2024-12-20 22:34:38.121] [info] Bar configured (width: 1920, height: 24) for output: eDP-1
+[2024-12-20 22:35:24.791] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-12-20 22:35:24.792] [info] Loading persistent workspaces from Waybar config
+[2024-12-20 22:35:24.792] [info] Loading persistent workspaces from Hyprland workspace rules
+waybar: no process found
+[2024-12-20 22:46:01.196] [info] Using configuration file /home/akash/.config/waybar/config
+[2024-12-20 22:46:01.197] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-12-20 22:46:01.197] [info] Using CSS file /home/akash/.config/waybar/style.css
+[2024-12-20 22:46:01.240] [error] style.css:4:16unknown value for property
+waybar: no process found
+[2024-12-20 22:46:10.076] [info] Using configuration file /home/akash/.config/waybar/config
+[2024-12-20 22:46:10.077] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-12-20 22:46:10.077] [info] Using CSS file /home/akash/.config/waybar/style.css
+[2024-12-20 22:46:10.078] [error] style.css:4:16unknown value for property
+waybar: no process found
+[2024-12-20 22:46:50.646] [info] Using configuration file /home/akash/.config/waybar/config
+[2024-12-20 22:46:50.647] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-12-20 22:46:50.647] [info] Using CSS file /home/akash/.config/waybar/style.css
+[2024-12-20 22:46:50.653] [info] Hyprland IPC starting
+[2024-12-20 22:46:50.654] [info] Loading persistent workspaces from Waybar config
+[2024-12-20 22:46:50.654] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-20 22:46:50.691] [warning] Requested height: 20 is less than the minimum height: 24 required by the modules
+[2024-12-20 22:46:50.691] [info] Bar configured (width: 1920, height: 24) for output: eDP-1
+[2024-12-20 22:47:00.931] [info] Quitting.
+waybar: no process found
+[2024-12-20 22:47:03.150] [info] Using configuration file /home/akash/.config/waybar/config
+[2024-12-20 22:47:03.151] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-12-20 22:47:03.151] [info] Using CSS file /home/akash/.config/waybar/style.css
+[2024-12-20 22:47:03.156] [info] Hyprland IPC starting
+[2024-12-20 22:47:03.156] [info] Loading persistent workspaces from Waybar config
+[2024-12-20 22:47:03.156] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-20 22:47:03.196] [warning] Requested height: 20 is less than the minimum height: 24 required by the modules
+[2024-12-20 22:47:03.196] [info] Bar configured (width: 1920, height: 24) for output: eDP-1
+[2024-12-20 22:47:06.234] [info] Quitting.
+waybar: no process found
+[2024-12-20 22:48:29.682] [info] Using configuration file /home/akash/.config/waybar/config
+[2024-12-20 22:48:29.683] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-12-20 22:48:29.683] [info] Using CSS file /home/akash/.config/waybar/style.css
+[2024-12-20 22:48:29.688] [info] Hyprland IPC starting
+[2024-12-20 22:48:29.688] [info] Loading persistent workspaces from Waybar config
+[2024-12-20 22:48:29.688] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-20 22:48:29.723] [warning] Requested height: 20 is less than the minimum height: 24 required by the modules
+[2024-12-20 22:48:29.723] [info] Bar configured (width: 1920, height: 24) for output: eDP-1
+Gdk-Message: 22:50:01.919: Error reading events from display: Connection reset by peer
