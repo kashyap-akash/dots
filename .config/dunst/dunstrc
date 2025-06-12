@@ -40,7 +40,7 @@
     max_icon_size = 32
     icon_path = ~/.config/dunst/images
     sticky_history = yes
-    history_length = 20
+    history_length = 2
     always_run_script = true
     title = Dunst
     class = Dunst

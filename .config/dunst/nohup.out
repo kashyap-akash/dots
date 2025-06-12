@@ -1168,3 +1168,14 @@ WARNING: No icon found in path: 'volume-down'
 WARNING: No icon found in path: 'volume-up'
 WARNING: No icon found in path: 'volume-up'
 X connection to :0 broken (explicit kill or server shutdown).
+MESSAGE: Using legacy offset syntax NxN, you should switch to the new syntax (N, N)
+WARNING: Progress bar corner radius clamped to half of progress bar height (5)
+WARNING: Icon 'brightness-up' not found in themes
+WARNING: Icon 'volume-mute' not found in themes
+WARNING: Icon 'volume-' not found in themes
+WARNING: Icon 'brightness-up' not found in themes
+WARNING: Icon 'brightness-down' not found in themes
+WARNING: Icon 'volume-mute' not found in themes
+WARNING: Icon 'volume-' not found in themes
+MESSAGE: Using legacy offset syntax NxN, you should switch to the new syntax (N, N)
+WARNING: Progress bar corner radius clamped to half of progress bar height (5)

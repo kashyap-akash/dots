@@ -57,3 +57,9 @@ super + control + p
     scrot --quality 100 ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png
 super + shift + w
     st -e nmtui
+super + control + w
+    ~/.local/bin/wifi-toggle.sh
+super + control +q
+    ~/.local/bin/killwm.sh
+super + o
+    xdotool type $(grep -v '^#' ~/dots/bookmarks | dmenu -i -l 50 | cut -d' ' -f1)
