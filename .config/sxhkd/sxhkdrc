@@ -48,16 +48,16 @@ super + shift + a
 super + shift + s
     st -e ncspot   
 super + e
-    st -e lf
+    st -e yazi
 super + shift + q
     slock
 super + shift + p
     scrot --select --quality 100 ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png
 super + control + p 
     scrot --quality 100 ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png
-super + shift + w
-    st -e nmtui
 super + control + w
+    st -e nmtui
+super + shift + w
     ~/.local/bin/wifi-toggle.sh
 super + control +q
     ~/.local/bin/killwm.sh
