@@ -1,3 +1,5 @@
+/* DWM PERFECT MINIMAL CONFIG */
+
 #include <X11/XF86keysym.h>
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 3;        /* gaps between windows */
