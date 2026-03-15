@@ -1,9 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # Add this to ~/.bashrc (or your $SHELL equivalent)
 export TERMINAL=/usr/local/bin/st
-export PATH=/home/akash/.local/bin:$PATH
-export PATH=/home/akash/.local/src:$PATH
-export GTK_THEME=Material-Black-Blueberry-LA
 export PATH="$HOME/.local/bin:$PATH"
 #export JAVA_HOME=$(~/.sdkman/candidates/java/)
 # Path to your oh-my-zsh installation.

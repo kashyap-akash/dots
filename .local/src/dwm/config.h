@@ -28,6 +28,7 @@ static const char *tags[] = {" "," ", " ", " ", " "};
 static const Rule rules[] = {
 	{ "St",                NULL,     NULL,           0,         0,          1,           0,        -1 },
 	{ NULL,                NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
+    {"Albion-Online",      NULL,     NULL,           0,         1,          -1}, 
 };
 
 /* layout(s) */

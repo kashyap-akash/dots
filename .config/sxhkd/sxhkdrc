@@ -52,9 +52,11 @@ super + e
 super + shift + q
     slock
 super + shift + p
-    scrot --select --quality 100 ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png
+    scrot --select --quality 100 ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png && \
+    notify-send "Screenshot saved" "Selected area saved to screenshots"
 super + control + p 
-    scrot --quality 100 ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png
+    scrot --quality 100 ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png && \
+    notify-send "Screenshot saved" "Fullscreen saved to screenshots"
 super + control + w
     st -e nmtui
 super + shift + w
