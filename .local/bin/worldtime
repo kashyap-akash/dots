@@ -1,0 +1,9 @@
+#!/bin/sh
+
+while true; do
+    clear
+    printf "India:        %s\n" "$(TZ=Asia/Kolkata date '+%H:%M')"
+    printf "Australia:    %s\n" "$(TZ=Australia/Perth date '+%H:%M')"
+    printf "New Zealand:  %s\n" "$(TZ=Pacific/Auckland date '+%H:%M')"
+    sleep 60
+done

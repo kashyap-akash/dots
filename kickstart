@@ -1,41 +1,35 @@
 #!/bin/sh
 
-#CONFIG FILES
-ln -s /home/akash/dots/.config/hypr /home/akash/.config
-ln -s /home/akash/dots/.config/lf /home/akash/.config
-ln -s /home/akash/dots/.config/MangoHud /home/akash/.config
-ln -s /home/akash/dots/.config/musikcube /home/akash/.config
-ln -s /home/akash/dots/.config/nvim /home/akash/.config
-ln -s /home/akash/dots/.config/sxhkd /home/akash/.config
-ln -s /home/akash/dots/.config/waybar /home/akash/.config
-ln -s /home/akash/dots/.config/cava /home/akash/.config
-ln -s /home/akash/dots/.config/dunst /home/akash/.config
-ln -s /home/akash/dots/.config/glava /home/akash/.config
-ln -s /home/akash/dots/.xinitrc /home/akash
-ln -s /home/akash/dots/.zshrc /home/akash
+DOTS="$HOME/dots"
 
-#SCRIPTS 
-ln -s /home/akash/dots/.local/bin/wiof ~/.local/bin
-ln -s /home/akash/dots/.local/bin/wion ~/.local/bin
-ln -s /home/akash/dots/.local/bin/update-library.sh ~/.local/bin
-ln -s /home/akash/dots/.local/bin/sb-volume ~/.local/bin
-ln -s /home/akash/dots/.local/bin/sb-internet ~/.local/bin
-ln -s /home/akash/dots/.local/bin/sb-cpu ~/.local/bin
-ln -s /home/akash/dots/.local/bin/sb-clock ~/.local/bin
-ln -s /home/akash/dots/.local/bin/sb-battery ~/.local/bin
-ln -s /home/akash/dots/.local/bin/pkgls ~/.local/bin
-ln -s /home/akash/dots/.local/bin/mirrorup ~/.local/bin
-ln -s /home/akash/dots/.local/bin/looknfeel ~/.local/bin
-ln -s /home/akash/dots/.local/bin/look ~/.local/bin
-ln -s /home/akash/dots/.local/bin/changebrightness ~/.local/bin
-ln -s /home/akash/dots/.local/bin/changevolume ~/.local/bin
-ln -s /home/akash/dots/.local/bin/extradim ~/.local/bin
-ln -s /home/akash/dots/.local/bin/limitvol ~/.local/bin
-ln -s /home/akash/dots/.local/bin/lfub ~/.local/bin
+# Ensure directories exist
+mkdir -p "$HOME/.config"
+mkdir -p "$HOME/.local/bin"
+mkdir -p "$HOME/.local/src"
 
-#PROGRAMS
-ln -s /home/akash/dots/.local/src/st ~/.local/src
-ln -s /home/akash/dots/.local/src/dwmblocks ~/.local/src
-ln -s /home/akash/dots/.local/src/dwm ~/.local/src
-ln -s /home/akash/dots/.local/src/dmenu ~/.local/src
+# CONFIG FILES
+configs="hypr lf MangoHud musikcube nvim sxhkd waybar cava dunst glava picom wal"
 
+for cfg in $configs; do
+    if [ -e "$HOME/.config/$cfg" ] && [ ! -L "$HOME/.config/$cfg" ]; then
+        rm -rf "$HOME/.config/$cfg"
+    fi
+    ln -sf "$DOTS/.config/$cfg" "$HOME/.config/"
+done
+
+ln -sf "$DOTS/.xinitrc" "$HOME/"
+ln -sf "$DOTS/.zshrc" "$HOME/"
+
+# SCRIPTS
+scripts="wiof wion update-library.sh sb-volume sb-internet sb-cpu sb-clock sb-battery pkgls mirrorup looknfeel look changebrightness changevolume extradim limitvol lfub worldtime killwm"
+
+for s in $scripts; do
+    ln -sf "$DOTS/.local/bin/$s" "$HOME/.local/bin/"
+done
+
+# PROGRAMS
+programs="st dwmblocks dwm dmenu"
+
+for p in $programs; do
+    ln -sf "$DOTS/.local/src/$p" "$HOME/.local/src/"
+done

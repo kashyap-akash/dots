@@ -40,9 +40,9 @@ XF86MonBrightnessDown
 super + Return
     st
 super + b 
-    firefox --private-window
+    brave --incognito
 super + shift + b 
-    firefox 
+    brave 
 super + shift + a 
     st -e musikcube
 super + shift + s
@@ -60,6 +60,7 @@ super + control + w
 super + shift + w
     ~/.local/bin/wifi-toggle.sh
 super + control +q
-    ~/.local/bin/killwm.sh
+    ~/.local/bin/killwm
 super + o
-    xdotool type $(grep -v '^#' ~/dots/bookmarks | dmenu -i -l 50 | cut -d' ' -f1)
+    xdg-open "$(grep -v '^#' ~/dots/bookmarks | dmenu -i -l 50 | cut -d' ' -f1)"
+   # xdotool type --delay 1 $(grep -v '^#' ~/dots/bookmarks | dmenu -i -l 50 | cut -d' ' -f1)

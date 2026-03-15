@@ -1,9 +1,11 @@
 # nvim: filetype=conf
+include ~/.cache/wal/dunstrc
 [global]
     monitor = 0
     follow = mouse
     width = 300
-    offset = 3x25
+    origin = top-center
+    offset = 0x25
     progress_bar = true
     progress_bar_height = 10
     progress_bar_frame_width = 1
@@ -17,7 +19,7 @@
     horizontal_padding = 20
     text_icon_padding = 15
     frame_width = 2
-    frame_color = "#AAA"
+    #frame_color = "#AAA"
     separator_color = frame
     sort = yes
     idle_threshold = 100
@@ -56,21 +58,21 @@
 
 
 [urgency_low]
-    foreground = "#F4F4F4"
+    # foreground = "#F4F4F4"
     background = "#0D0D0D"
-    #frame_color = "#F4F4F4"
+    # #frame_color = "#F4F4F4"
     highlight ="#F4F4F4" 
-    timeout = 10
+    #timeout = 10
 
 [urgency_normal]
     background = "#0D0D0D"
-    foreground = "#F4F4F4"
-    #frame_color ="#F4F4F4"
+    # foreground = "#F4F4F4"
+    # #frame_color ="#F4F4F4"
     highlight ="#F4F4F4" 
-    timeout = 10
+    #timeout = 10
 
 [urgency_critical]
     background = "#0D0D0D"
-    #frame_color ="#B3C3B8"
+    # #frame_color ="#B3C3B8"
     highlight ="#F4F4F4" 
-    timeout = 0
+    #timeout = 0

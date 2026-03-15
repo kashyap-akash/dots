@@ -1179,3 +1179,9 @@ WARNING: Icon 'volume-mute' not found in themes
 WARNING: Icon 'volume-' not found in themes
 MESSAGE: Using legacy offset syntax NxN, you should switch to the new syntax (N, N)
 WARNING: Progress bar corner radius clamped to half of progress bar height (5)
+MESSAGE: Using legacy offset syntax NxN, you should switch to the new syntax (N, N)
+WARNING: Icon 'volume-down' not found in icon_path
+WARNING: Icon 'volume-up' not found in icon_path
+WARNING: Icon 'volume-down' not found in icon_path
+WARNING: Icon 'volume-up' not found in icon_path
+WARNING: Icon 'volume-up' not found in icon_path
