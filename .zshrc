@@ -5,7 +5,6 @@ export PATH="$HOME/.local/bin:$PATH"
 #export JAVA_HOME=$(~/.sdkman/candidates/java/)
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 # export _JAVA_AWT_WM_NONREPARENTING=1
 # export DXVK_HUD=fps,memory 
 # export DXVK_FRAME_RATE=33

@@ -25,3 +25,5 @@ esac
 
 echo " $icon $vol% " 
 #notify-send "$icon$vol" && exit
+
+
