@@ -1,0 +1,52 @@
+[Default Applications]
+# Images
+image/jpeg=nsxiv.desktop
+image/png=nsxiv.desktop
+image/gif=nsxiv.desktop
+image/bmp=nsxiv.desktop
+image/svg+xml=nsxiv.desktop
+
+# Text / code
+text/plain=nvim.desktop
+text/x-log=nvim.desktop;
+text/html=brave-browser.desktop
+text/markdown=nvim.desktop
+
+# PDFs
+application/pdf=zathura.desktop
+
+# Audio
+audio/mpeg=vlc.desktop
+audio/x-wav=vlc.desktop
+audio/ogg=vlc.desktop
+
+# Video
+video/mp4=vlc.desktop
+video/x-matroska=vlc.desktop
+video/webm=vlc.desktop
+
+# Archives
+application/zip=file-roller.desktop
+application/x-tar=file-roller.desktop
+application/x-gzip=file-roller.desktop
+
+[Added Associations]
+image/jpeg=nsxiv.desktop;
+image/png=nsxiv.desktop;
+image/gif=nsxiv.desktop;
+image/bmp=nsxiv.desktop;
+image/svg+xml=nsxiv.desktop;
+text/plain=nvim.desktop;
+text/x-log=nvim.desktop;
+text/html=brave-browser.desktop;
+text/markdown=nvim.desktop;
+application/pdf=zathura.desktop;
+audio/mpeg=vlc.desktop;
+audio/x-wav=vlc.desktop;
+audio/ogg=vlc.desktop;
+video/mp4=vlc.desktop;
+video/x-matroska=vlc.desktop;
+video/webm=vlc.desktop;
+application/zip=file-roller.desktop;
+application/x-tar=file-roller.desktop;
+application/x-gzip=file-roller.desktop;desktop;

@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # Add this to ~/.bashrc (or your $SHELL equivalent)
-export TERMINAL=/usr/local/bin/st
+export EDITOR="nvim"
+export TERMINALEMULATOR="st"
+export TERMINAL="st" 
 export PATH="$HOME/.local/bin:$PATH"
 #export JAVA_HOME=$(~/.sdkman/candidates/java/)
 # Path to your oh-my-zsh installation.
@@ -104,16 +106,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias spotifyctl="playerctl --player=spotifyd"
-alias musikctl="playerctl --player=musikcube"
 alias cls="clear"
 alias ls="lsd --color=auto"
 alias ff="fastfetch"
 #alias j="autojump"
 alias lf="lfub"
-alias chadwm='startx ~/.config/chadwm/scripts/run.sh'
+alias albion="prime-run games/albiononline/Albion-Online"
 #source /home/akash/documents/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-alias terraria="~/Games/Terraria/start.sh"
 
 
 #SDKMANAGER-JAVA
@@ -122,4 +121,5 @@ alias terraria="~/Games/Terraria/start.sh"
 eval "$(dircolors -p | \
     sed 's/ 4[0-9];/ 01;/; s/;4[0-9];/;01;/g; s/;4[0-9] /;01 /' | ##TO REMOVE ALL BACKGROUND HIGHLIGHTING##    
     dircolors /dev/stdin)"
+
 #source /usr/share/nvm/init-nvm.sh

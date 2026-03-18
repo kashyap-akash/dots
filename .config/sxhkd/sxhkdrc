@@ -26,6 +26,8 @@ XF86AudioNext
 XF86AudioPrev
     playerctl previous
 
+XF86AudioMicMute
+    mic-status
 
 #BRIGHTNESS KEYS
 

@@ -1,0 +1,10 @@
+[opener]
+play = [
+	{ run = "mpv %s", orphan = true, for = "unix" },
+	]
+edit = [
+	{ run = "st -et nvim %s", block = true, for = "unix" },
+	]
+open = [
+	{ run = "xdg-open %s", desc = "Open" },
+]
