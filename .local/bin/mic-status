@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SOURCE=$(pactl get-default-source)
+MUTED=$(pactl get-source-mute "$SOURCE" | awk '{print $2}')
+
+if [ "$MUTED" = "yes" ]; then
+    pactl set-source-mute "$SOURCE" 0
+    dunstify -r 9993 -u low -i "Microphone" -t 2000 "Unmuted    "
+else
+    pactl set-source-mute "$SOURCE" 1
+    dunstify -r 9993 -u low -i "Microphone" -t 2000 "Muted    "
+fi

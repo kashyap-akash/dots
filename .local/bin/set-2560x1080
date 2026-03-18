@@ -1,0 +1,8 @@
+# 1️⃣ Add the mode
+xrandr --newmode "2560x1080_60.00"  230.00  2560 2720 2992 3424  1080 1083 1093 1120 -hsync +vsync
+
+# 2️⃣ Attach it to your display
+xrandr --addmode eDP-1 "2560x1080_60.00"
+
+# 3️⃣ Switch to it
+xrandr --output eDP-1 --mode "2560x1080_60.00"
