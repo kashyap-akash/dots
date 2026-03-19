@@ -1,0 +1,42 @@
+#!/bin/bash
+
+tmp="/tmp/screenshot_$(date +%s).png"
+file="$HOME/pictures/screenshots/$(date +%Y-%m-%d-%T-screenshot.png)"
+
+# Take screenshot
+if [ "$1" = "select" ]; then
+    scrot --select --quality 100 "$tmp"
+else
+    scrot --quality 100 "$tmp"
+fi
+
+# If user cancels selection, exit
+[ $? -ne 0 ] && exit 1
+
+# Show menu
+choice=$(printf "Copy\nSave\nCopy & Save\nDiscard" | dmenu -i -p "Screenshot:")
+
+case "$choice" in
+    Copy)
+        xclip -selection clipboard -t image/png -i "$tmp"
+        rm "$tmp"
+        dunstify "Screenshot" "Copied to clipboard" -t 1500
+        ;;
+    Save)
+        mv "$tmp" "$file"
+        dunstify "Screenshot" "Saved" -t 1500
+        ;;
+    "Copy & Save")
+        xclip -selection clipboard -t image/png -i "$tmp"
+        mv "$tmp" "$file"
+        dunstify "Screenshot" "Copied + Saved" -t 1500
+        ;;
+    Discard)
+        rm "$tmp"
+        dunstify "Screenshot" "Discarded" -t 1000
+        ;;
+    *)
+        # If you press escape or nothing
+        rm "$tmp"
+        ;;
+esac

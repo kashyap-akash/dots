@@ -6,13 +6,13 @@ super + shift + Escape
 #MEDIA KEYS
 
 XF86AudioRaiseVolume
-	changevolume up 
+	changevolume up && pkill -RTMIN+6 dwmblocks 
 
 XF86AudioLowerVolume
-	changevolume down 
+	changevolume down && pkill -RTMIN+6 dwmblocks
 
 XF86AudioMute
-	changevolume mute
+	changevolume mute && pkill -RTMIN+6 dwmblocks
 
 XF86AudioPlay
     playerctl play-pause
@@ -54,11 +54,9 @@ super + e
 super + shift + q
     slock
 super + shift + p
-    scrot --select --quality 100 ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png && \
-    notify-send "Screenshot saved" "Selected area saved to screenshots"
-super + control + p 
-    scrot --quality 100 ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png && \
-    notify-send "Screenshot saved" "Fullscreen saved to screenshots"
+    screenshot select
+super + control + p
+    screenshot full
 super + control + w
     st -e nmtui
 super + shift + w

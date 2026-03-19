@@ -3,22 +3,36 @@
 # Use light to logarithmically adjust laptop screen brightness
 # and send a notification displaying the current brightness level after.
 
-send_notification() {
-	brightness=$(brightnessctl -m | cut -d, -f4 | tr -d '%')
-	dunstify -a "changebrightness" -u low -r 9991 \
-	-h int:value:"$brightness" \
-	-i "brightness-$1" \
-	"Brightness: $brightness%" \
-	-t 2000
-}
-
-case $1 in
-up)
-	brightnessctl set +5%
-	send_notification "$1"
-	;;
-down)
-	brightnessctl set 5%-
-	send_notification "$1"
-	;;
+# send_notification() {
+# 	brightness=$(brightnessctl -m | cut -d, -f4 | tr -d '%')
+# 	dunstify -a "changebrightness" -u low -r 9991 \
+# 	-h int:value:"$brightness" \
+# 	"Brightness: $brightness%" \
+# 	-t 2000
+# }
+#
+# case $1 in
+# up)
+# 	brightnessctl set +5%
+# 	send_notification "$1"
+# 	;;
+# down)
+# 	brightnessctl set 5%-
+# 	send_notification "$1"
+# 	;;
+# esac
+#
+case "$1" in
+  up)   brightnessctl set +5% ;;
+  down) brightnessctl set 5%- ;;
+  *) exit 1 ;;
 esac
+
+brightness=$(brightnessctl g)
+max=$(brightnessctl m)
+brightness=$(( brightness * 100 / max ))
+
+dunstify -a changebrightness -u low -r 9991 \
+  -h int:value:"$brightness" \
+  "Brightness: ${brightness}%" \
+  -t 2000

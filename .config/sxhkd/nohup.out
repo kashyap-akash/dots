@@ -1,0 +1,3 @@
+WARNING: Invalid config file at line 2: Missing '='.
+MESSAGE: Using legacy offset syntax NxN, you should switch to the new syntax (N, N)
+CRITICAL: [dbus_cb_name_lost:1423] Cannot acquire 'org.freedesktop.Notifications': Name is acquired by 'dunst' with PID '1244791'.

@@ -1,13 +1,13 @@
 #!/bin/sh
 
-wall=$(find ~/pictures/wallpapers/minimal.png)
+wall=$(find ~/pictures/wallpapers/samurai-grassland.jpg)
 
 
-wall1=$(find ~/pictures/wallpapers/dark-sakura.png)
+#wall1=$(find ~/pictures/wallpapers/dark-sakura.png)
 #add this as wallpaper
 xwallpaper --zoom $wall
 xrandr --output eDP-1 --set "Broadcast RGB" "Full"
 #generate colour scheme
 #wal -c
-wal -i $wall1
+wal -i $wall
 xdotool key super+F5
