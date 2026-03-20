@@ -21,7 +21,7 @@ ln -sf "$DOTS/.xinitrc" "$HOME/"
 ln -sf "$DOTS/.zshrc" "$HOME/"
 
 # SCRIPTS
-scripts="wiof wion update-library.sh sb-volume sb-internet sb-cpu sb-clock sb-battery pkgls mirrorup looknfeel look changebrightness changevolume extradim limitvol lfub worldtime killwm set-1920x1080 set-2560x1080 mic-status screenshot"
+scripts="wiof wion update-library.sh sb-volume sb-internet sb-cpu sb-clock sb-battery pkgls mirrorup looknfeel changebrightness changevolume extradim limitvol lfub worldtime killwm set-1920x1080 set-2560x1080 mic-status screenshot"
 
 for s in $scripts; do
     ln -sf "$DOTS/.local/bin/$s" "$HOME/.local/bin/"

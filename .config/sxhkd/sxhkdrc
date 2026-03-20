@@ -6,13 +6,13 @@ super + shift + Escape
 #MEDIA KEYS
 
 XF86AudioRaiseVolume
-	changevolume up && pkill -RTMIN+6 dwmblocks 
+	changevolume up 
 
 XF86AudioLowerVolume
-	changevolume down && pkill -RTMIN+6 dwmblocks
+	changevolume down
 
 XF86AudioMute
-	changevolume mute && pkill -RTMIN+6 dwmblocks
+	changevolume mute
 
 XF86AudioPlay
     playerctl play-pause
