@@ -1,7 +1,7 @@
 return {
   "catppuccin/nvim",
   name = "catppuccin",
-  priority = 1000, -- VERY IMPORTANT (load before other UI plugins)
+  priority = 1000,
 
   config = function()
     require("catppuccin").setup({
@@ -9,8 +9,7 @@ return {
       background = {
         dark = "mocha",
       },
-      vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-      vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
       transparent_background = true,
       show_end_of_buffer = false,
       term_colors = false,
@@ -43,5 +42,9 @@ return {
 
     -- Apply colorscheme AFTER setup
     vim.cmd.colorscheme("catppuccin")
+
+    -- ✅ NOW apply transparency (outside setup)
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
   end,
 }
