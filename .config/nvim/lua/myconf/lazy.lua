@@ -14,50 +14,19 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 
 local plugins = {
-    {
-        'nvim-telescope/telescope.nvim',
-        dependencies = { { 'nvim-lua/plenary.nvim' } } --ASYNCHRONISM IN LUA
-    },
-    { 'akinsho/bufferline.nvim',         version = "*",      dependencies = 'nvim-tree/nvim-web-devicons' },
-    { 'HiPhish/rainbow-delimiters.nvim' },
-    { 'nvim-tree/nvim-web-devicons' },
-    { 'catppuccin/nvim',                 name = "catppuccin" }, --COLORSCHEME.....
-    { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' }, --TS SYNTAX HIGHLIGHTING....
-    { 'tpope/vim-fugitive' },                                   --GITHUB STATISTICS
-    { 'norcalli/nvim-colorizer.lua' },                          --COLORIZE RGB AND OTHER COLOUR VALUES
-    { 'numToStr/Comment.nvim' },                                -- Easily comment stuff
-    {
-        'nvim-lualine/lualine.nvim',
-        dependencies = { 'nvim-tree/nvim-web-devicons' } --Cool Looking Bottom Line
-    },
-    { 'JoosepAlviste/nvim-ts-context-commentstring' }, {
-    'nvim-tree/nvim-tree.lua',
-    config = function()
-        vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
-    end,
-},                                                                                  --FILE TREE
-    { 'akinsho/toggleterm.nvim',                    version = "*", config = true }, --TOGGLE TERMINAL INSIDE NEOVIM
-    {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v3.x',
-        dependencies = {
-            -- LSP Support
-            { 'neovim/nvim-lspconfig' },
-            { 'williamboman/mason.nvim' },
-            { 'williamboman/mason-lspconfig.nvim' },
-            -- Autocompletion
-            { 'hrsh7th/nvim-cmp' },
-            { 'hrsh7th/cmp-nvim-lsp' },
-            { 'hrsh7th/cmp-buffer' },
-            { 'hrsh7th/cmp-path' },
-            { 'hrsh7th/cmp-nvim-lua' },
-            { 'saadparwaiz1/cmp_luasnip' },
-
-            -- Snippets
-            { 'L3MON4D3/LuaSnip' },
-            { 'rafamadriz/friendly-snippets' },
-        },
-    },
+  require("myconf.plugins.treesitter"),
+  require("myconf.plugins.telescope"),
+  require("myconf.plugins.bufferline"),
+  require("myconf.plugins.lualine"),
+  require("myconf.plugins.nvimtree"),
+  require("myconf.plugins.toggleterm"),
+  require("myconf.plugins.cmp"),
+  require("myconf.plugins.lsp"),
+  require("myconf.plugins.comments"),
+  require("myconf.plugins.colorizer"),
+  require("myconf.plugins.rainbow"),
+  require("myconf.plugins.catppuccin"),
+  require("myconf.plugins.fugitive"),
 }
 
-require("lazy").setup(plugins, opts)
+require("lazy").setup(plugins)
