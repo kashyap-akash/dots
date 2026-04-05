@@ -17,7 +17,7 @@ vim.g.mapleader = " "
 
 require("lazy").setup("myconf.plugins", {
   defaults = {
-    lazy = true,
+    lazy = false,
   },
   install = {
     colorscheme = { "catppuccin" },

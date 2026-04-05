@@ -1,6 +1,4 @@
 #!/bin/sh 
-#xset -dpms & 
-#xset s off &
 
 # background services
 xset -b  # remove annoying notification beep
